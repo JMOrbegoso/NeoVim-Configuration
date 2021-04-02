@@ -90,6 +90,7 @@ filetype plugin indent on
 "*****************************************************************************"
 
 set noswapfile " Disable swap files
+set nobackup " Disable backups
 
 "" Encoding
 set encoding=utf-8
