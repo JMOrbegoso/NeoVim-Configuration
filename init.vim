@@ -300,6 +300,10 @@ noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 
+"" Refresh init.vim configuration
+nmap <F5> :source ~/.config/nvim/init.vim<CR>
+vmap <F5> :source ~/.config/nvim/init.vim<CR>
+
 "" Split
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
