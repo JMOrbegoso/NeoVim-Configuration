@@ -137,8 +137,11 @@ let g:session_command_aliases = 1
 "*****************************************************************************
 
 syntax on
+
 set ruler
-set number
+set number " Show row numbers
+set rnu " Show relative numbers on rows
+set numberwidth=1 " Size of row numbers
 
 let no_buffers_menu=1
 colorscheme dracula
