@@ -401,11 +401,11 @@ if has('macunix')
   vmap <C-c> :w !pbcopy<CR><CR>
 endif
 
-"" Buffer nav
-noremap <leader>z :bp<CR>
+"" Buffer navigation
 noremap <leader>q :bp<CR>
-noremap <leader>x :bn<CR>
+noremap <leader>z :bp<CR>
 noremap <leader>w :bn<CR>
+noremap <leader>x :bn<CR>
 
 "" Close buffer
 noremap <leader>c :bd<CR>
