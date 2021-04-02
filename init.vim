@@ -146,7 +146,9 @@ set numberwidth=1 " Size of row numbers
 let no_buffers_menu=1
 colorscheme dracula
 
+set mouse=a " Enables the mouse usage
 set mousemodel=popup
+
 set t_Co=256
 set guioptions=egmrti
 set gfn=Monospace\ 10
