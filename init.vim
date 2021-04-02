@@ -9,7 +9,7 @@ else
   let curl_exists=expand('curl')
 endif
 
-let g:vim_bootstrap_langs = ""
+let g:vim_bootstrap_langs = "c"
 let g:vim_bootstrap_editor = "nvim"				" nvim or vim
 let g:vim_bootstrap_theme = "dracula"
 let g:vim_bootstrap_frams = ""
@@ -73,6 +73,13 @@ Plug 'honza/vim-snippets'
 
 "*****************************************************************************
 "" Custom bundles
+"*****************************************************************************
+
+" c
+Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
+Plug 'ludwig/split-manpage.vim'
+
+"*****************************************************************************
 "*****************************************************************************
 
 "" Include user's extra bundle
@@ -440,6 +447,13 @@ nnoremap <Leader>o :.Gbrowse<CR>
 
 "*****************************************************************************
 "" Custom configs
+"*****************************************************************************
+
+" c
+autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+
+"*****************************************************************************
 "*****************************************************************************
 
 "" Include user's local vim config
