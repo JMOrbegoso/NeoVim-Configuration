@@ -294,6 +294,12 @@ set autoread
 "" Mappings
 "*****************************************************************************
 
+"" Disable directional keys on Normal, Visual, Select, Operator-pending modes
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+
 "" Split
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
