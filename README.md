@@ -1,2 +1,3 @@
-# NeoVim-Configuration
-NeoVim-Configuration
+# NeoVim Configuration
+
+Configuration and templates for NeoVim.
