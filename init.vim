@@ -27,7 +27,7 @@ if !filereadable(vimplug_exists)
   autocmd VimEnter * PlugInstall
 endif
 
-" Required:
+"" Required:
 call plug#begin(expand('~/.config/nvim/plugged'))
 
 "*****************************************************************************
@@ -78,26 +78,25 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "" Custom bundles
 "*****************************************************************************
 
-" c
+"" C/C++
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
 Plug 'ludwig/split-manpage.vim'
 
-" html
-"" HTML Bundle
+"" HTML
 Plug 'hail2u/vim-css3-syntax'
 Plug 'gko/vim-coloresque'
 Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
-" typescript
+"" TypeScript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
-" c#
+"" C#
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'nickspoons/vim-sharpenup'
 
-" CoC extensions
+"" CoC extensions
 let g:coc_global_extensions = [
   \'coc-json',
   \'coc-git',
@@ -160,7 +159,7 @@ else
     set shell=/bin/sh
 endif
 
-" session management
+"" Session management
 let g:session_directory = "~/.config/nvim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
@@ -195,7 +194,7 @@ if has("gui_running")
 else
   let g:CSApprox_loaded = 1
 
-  " IndentLine
+"" IndentLine
   let g:indentLine_enabled = 1
   let g:indentLine_concealcursor = 0
   let g:indentLine_char = '┆'
@@ -222,8 +221,8 @@ set titlestring=%F
 
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 
-" Search mappings: These will make it so that going to the next one in a
-" search will center on the line it's found in.
+"" Search mappings: These will make it so that going to the next one in a
+"" Search will center on the line it's found in.
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
@@ -231,7 +230,7 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
-" vim-airline
+"" Vim-airline
 let g:airline_theme = 'powerlineish'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
@@ -243,7 +242,7 @@ let g:airline_skip_empty_sections = 1
 "" Abbreviations
 "*****************************************************************************
 
-"" no one is really happy until you have this shortcuts
+"" No one is really happy until you have this shortcuts
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!
@@ -267,20 +266,20 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
-" grep.vim
+"" Grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
 let Grep_Default_Options = '-IR'
 let Grep_Skip_Files = '*.log *.db'
 let Grep_Skip_Dirs = '.git node_modules'
 
-" terminal emulation
+"" Terminal emulation
 nnoremap <silent> <leader>sh :terminal<CR>
 
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
 
-" remove trailing whitespaces
+"" Remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
 
 "*****************************************************************************
@@ -311,13 +310,13 @@ augroup vimrc-remember-cursor-position
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 
-"" txt
+"" Txt
 augroup vimrc-wrapping
   autocmd!
   autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
 augroup END
 
-"" make/cmake
+"" Make/CMake
 augroup vimrc-make-cmake
   autocmd!
   autocmd FileType make setlocal noexpandtab
@@ -363,7 +362,7 @@ noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
 noremap <Leader>gr :Gremove<CR>
 
-" session management
+"" Session management
 nnoremap <leader>so :OpenSession<Space>
 nnoremap <leader>ss :SaveSession<Space>
 nnoremap <leader>sd :DeleteSession<CR>
@@ -385,18 +384,18 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
-"" fzf.vim
+"" Fzf.vim
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
 
-" The Silver Searcher
+"" The Silver Searcher
 if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
-" ripgrep
+"" Ripgrep
 if executable('rg')
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
   set grepprg=rg\ --vimgrep
@@ -409,22 +408,22 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
-" snippets
+"" Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
 
-" ale
+"" Ale
 let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
 
-" Tagbar
+"" Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
-" Disable visualbell
+"" Disable visualbell
 set noerrorbells visualbell t_vb=
 if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
@@ -478,18 +477,18 @@ nnoremap <Leader>o :.Gbrowse<CR>
 "" Custom configs
 "*****************************************************************************
 
-" c
+" C/C++
 autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 
-" html
-" for html files, 2 spaces
+"" HTML
+"" for html files, 2 spaces
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 
-" typescript
+"" TypeScript
 let g:yats_host_keyword = 1
 
-" c#
+"" C#
 let g:OmniSharp_selector_ui = 'fzf'
 
 "*****************************************************************************
@@ -504,7 +503,7 @@ endif
 "" Convenience variables
 "*****************************************************************************
 
-" vim-airline
+"" Vim-Airline
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
