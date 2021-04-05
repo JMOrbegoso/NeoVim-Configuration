@@ -24,5 +24,6 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 
 | Action | Mapping  | Mode   |
 | ------ | -------- | ------ |
+| Save   | Ctrl + s | Normal |
 | Undo   | Ctrl + z | Normal |
 | Redo   | Ctrl + r | Normal |

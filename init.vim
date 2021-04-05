@@ -349,7 +349,7 @@ nmap <F5> :source ~/.config/nvim/init.vim<CR>
 vmap <F5> :source ~/.config/nvim/init.vim<CR>
 
 "" Save current buffer
-nnoremap <c-s> :w<CR>
+nnoremap <C-s> :w<CR>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
