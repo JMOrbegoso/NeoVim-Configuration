@@ -19,3 +19,10 @@ sudo apt install ccls
 ```
 
 Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim, or copy its content to the file opened by Nvim when we use the command: **:CocConfig**.
+
+## Mappings table
+
+| Action | Mapping  | Mode   |
+| ------ | -------- | ------ |
+| Undo   | Ctrl + z | Normal |
+| Redo   | Ctrl + r | Normal |
