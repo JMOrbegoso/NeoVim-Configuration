@@ -335,6 +335,15 @@ noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 
+"" Undo with <Ctrl + z> on Normal mode
+nmap <C-z> :undo<CR>
+
+"" Disable undo with "u"
+noremap u <nop>
+
+"" Disable process suspension on Visual mode
+vmap <C-z> <nop>
+
 "" Refresh init.vim configuration
 nmap <F5> :source ~/.config/nvim/init.vim<CR>
 vmap <F5> :source ~/.config/nvim/init.vim<CR>
