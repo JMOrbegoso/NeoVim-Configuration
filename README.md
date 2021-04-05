@@ -2,6 +2,22 @@
 
 Configuration and templates for NeoVim.
 
+## Requirements
+
+For the shared clipboard it is necessary to have **xclip** installed on the GNU/Linux system:
+
+Arch based distros:
+
+```bash
+sudo pacman -S xclip
+```
+
+Debian based distros:
+
+```bash
+sudo apt install xclip
+```
+
 ## Language Servers for code completion
 
 Language servers of Json, HTML, TypeScript and C# are installed on the first **:PlugInstall**, but for C/C++ code completion require **ccls** installed on the system first:
