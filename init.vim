@@ -71,6 +71,9 @@ Plug 'xolox/vim-session'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+"" Code completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
@@ -93,6 +96,15 @@ Plug 'HerringtonDarkholme/yats.vim'
 " c#
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'nickspoons/vim-sharpenup'
+
+" CoC extensions
+let g:coc_global_extensions = [
+  \'coc-json',
+  \'coc-git',
+  \'coc-html',
+  \'coc-tsserver',
+  \'coc-omnisharp',
+  \]
 
 "*****************************************************************************
 "*****************************************************************************
