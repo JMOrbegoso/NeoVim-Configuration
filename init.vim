@@ -454,9 +454,7 @@ endif
 
 "" Buffer navigation
 noremap <leader>q :bp<CR>
-noremap <leader>z :bp<CR>
 noremap <leader>w :bn<CR>
-noremap <leader>x :bn<CR>
 
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
