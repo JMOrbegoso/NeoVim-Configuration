@@ -38,13 +38,17 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 
 ## Mappings table
 
-| Action                | Mapping  | Mode              |
-| --------------------- | -------- | ----------------- |
-| Save                  | Ctrl + s | Normal            |
-| Undo                  | Ctrl + z | Normal            |
-| Redo                  | Ctrl + r | Normal            |
-| Copy selection        | y        | Visual            |
-| Copy the current line | Y        | Visual            |
-| Cut selection         | d        | Visual            |
-| Cut the current line  | D        | Visual            |
-| Paste                 | p        | Normal and Visual |
+| Action                       | Mapping        | Mode              |
+| ---------------------------- | -------------- | ----------------- |
+| Save                         | Ctrl + s       | Normal            |
+| Undo                         | Ctrl + z       | Normal            |
+| Redo                         | Ctrl + r       | Normal            |
+| Copy selection               | y              | Visual            |
+| Copy the current line        | Y              | Visual            |
+| Cut selection                | d              | Visual            |
+| Cut the current line         | D              | Visual            |
+| Paste                        | p              | Normal and Visual |
+| Open new tab                 | leader key + t | Normal            |
+| Close current buffer         | leader key + c | Normal            |
+| Navigate to the next tab     | Tab            | Normal            |
+| Navigate to the previous tab | Tab + Shift    | Normal            |

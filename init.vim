@@ -378,7 +378,10 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
 "" Open new tab
-nnoremap <silent> <S-t> :tabnew<CR>
+nnoremap <silent> <leader>t :tabnew<CR>
+
+"" Close current buffer
+noremap <silent> <leader>c :bd<CR>
 
 "" Tabs navigation
 nnoremap <Tab> gt
@@ -454,9 +457,6 @@ noremap <leader>q :bp<CR>
 noremap <leader>z :bp<CR>
 noremap <leader>w :bn<CR>
 noremap <leader>x :bn<CR>
-
-"" Close buffer
-noremap <leader>c :bd<CR>
 
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
