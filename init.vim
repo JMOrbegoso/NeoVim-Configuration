@@ -329,12 +329,6 @@ set autoread
 "" Mappings
 "*****************************************************************************
 
-"" Disable directional keys on Normal, Visual, Select, Operator-pending modes
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
-
 "" Undo with <Ctrl + z> on Normal mode
 nmap <C-z> :undo<CR>
 
@@ -355,11 +349,17 @@ nnoremap <C-s> :w<CR>
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
 
+"" Switch splitted windows
+noremap <up> <C-w>k
+noremap <down> <C-w>j
+noremap <left> <C-w>h
+noremap <right> <C-w>l
+
 "" Resize the split buffer
-nnoremap <silent> <right> :vertical resize +5<CR>
-nnoremap <silent> <left> :vertical resize -5<CR>
-nnoremap <silent> <up> :resize +5<CR>
-nnoremap <silent> <down> :resize -5<CR>
+nnoremap <silent> <Leader><right> :vertical resize +5<CR>
+nnoremap <silent> <Leader><left> :vertical resize -5<CR>
+nnoremap <silent> <Leader><up> :resize +5<CR>
+nnoremap <silent> <Leader><down> :resize -5<CR>
 
 "" Git
 noremap <Leader>ga :Gwrite<CR>
@@ -460,12 +460,6 @@ noremap <leader>x :bn<CR>
 
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
-
-"" Switching windows
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
-noremap <C-h> <C-w>h
 
 "" Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv

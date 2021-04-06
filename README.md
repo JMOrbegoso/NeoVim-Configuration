@@ -38,17 +38,25 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 
 ## Mappings table
 
-| Action                       | Mapping        | Mode              |
-| ---------------------------- | -------------- | ----------------- |
-| Save                         | Ctrl + s       | Normal            |
-| Undo                         | Ctrl + z       | Normal            |
-| Redo                         | Ctrl + r       | Normal            |
-| Copy selection               | y              | Visual            |
-| Copy the current line        | Y              | Visual            |
-| Cut selection                | d              | Visual            |
-| Cut the current line         | D              | Visual            |
-| Paste                        | p              | Normal and Visual |
-| Open new tab                 | leader key + t | Normal            |
-| Close current buffer         | leader key + c | Normal            |
-| Navigate to the next tab     | Tab            | Normal            |
-| Navigate to the previous tab | Tab + Shift    | Normal            |
+| Action                                  | Mapping        | Mode              |
+| --------------------------------------- | -------------- | ----------------- |
+| Save                                    | Ctrl + s       | Normal            |
+| Undo                                    | Ctrl + z       | Normal            |
+| Redo                                    | Ctrl + r       | Normal            |
+| Copy selection                          | y              | Visual            |
+| Copy the current line                   | Y              | Visual            |
+| Cut selection                           | d              | Visual            |
+| Cut the current line                    | D              | Visual            |
+| Paste                                   | p              | Normal and Visual |
+| Open new tab                            | leader key + t | Normal            |
+| Close current buffer                    | leader key + c | Normal            |
+| Navigate to the next tab                | Tab            | Normal            |
+| Navigate to the previous tab            | Tab + Shift    | Normal            |
+| Switch splitted window ↑                | ↑              | Normal and Visual |
+| Switch splitted window ←                | ←              | Normal and Visual |
+| Switch splitted window →                | →              | Normal and Visual |
+| Switch splitted window ↓                | ↓              | Normal and Visual |
+| Resize splitted window vertical up      | leader key + ↑ | Normal            |
+| Resize splitted window vertical down    | leader key + ↓ | Normal            |
+| Resize splitted window horizontal left  | leader key + ← | Normal            |
+| Resize splitted window horizontal right | leader key + → | Normal            |
