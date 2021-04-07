@@ -36,6 +36,20 @@ sudo apt install ccls
 
 Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim, or copy its content to the file opened by Nvim when we use the command: **:CocConfig**.
 
+## Extra
+
+### Sort usings with OmniSharp
+
+OmniSharp by default do not sort the usings in a cs file, you can change this by specifying it in the OmniSharp configuration file located on ~/.omnisharp/omnisharp.json adding the next values:
+
+```json
+{
+  "FormattingOptions": {
+    "OrganizeImports": true
+  }
+}
+```
+
 ## Mappings table
 
 | Action                                  | Mapping        | Mode              |
