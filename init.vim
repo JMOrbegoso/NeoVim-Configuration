@@ -102,6 +102,7 @@ let g:coc_global_extensions = [
   \'coc-git',
   \'coc-html',
   \'coc-tsserver',
+  \'coc-prettier',
   \'coc-omnisharp',
   \]
 
@@ -282,6 +283,9 @@ nnoremap <silent> <leader>sh :terminal<CR>
 
 "" Remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
+
+"" Setup Prettier format code command
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 "*****************************************************************************
 "" Functions
