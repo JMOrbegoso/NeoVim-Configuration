@@ -48,6 +48,7 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 | Cut selection                           | d              | Visual            |
 | Cut the current line                    | D              | Visual            |
 | Paste                                   | p              | Normal and Visual |
+| Replicate current line                  | yy + p         | Normal            |
 | Open new tab                            | leader key + t | Normal            |
 | Close current buffer                    | leader key + c | Normal            |
 | Navigate to the next tab                | Tab            | Normal            |
