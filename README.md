@@ -63,3 +63,5 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 | Resize splitted window horizontal right | leader key + → | Normal            |
 | Buffer navigation ←                     | leader key + q | Normal            |
 | Buffer navigation →                     | leader key + w | Normal            |
+| Format current buffer                   | leader key + f | Normal            |
+| C#: Sort usings                         | leader key + u | Normal            |

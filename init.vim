@@ -284,6 +284,9 @@ nnoremap <silent> <leader>sh :terminal<CR>
 "" Remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
 
+"" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocAction('format')
+
 "" Setup Prettier format code command
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -475,6 +478,10 @@ vnoremap K :m '<-2<CR>gv=gv
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
 
+"" Format code with CoC.Vim
+xmap <silent> <Leader>f <Plug>(coc-format)
+nmap <silent> <Leader>f <Plug>(coc-format)
+
 "*****************************************************************************
 "" Custom configs
 "*****************************************************************************
@@ -492,6 +499,10 @@ let g:yats_host_keyword = 1
 
 "" C#
 let g:OmniSharp_selector_ui = 'fzf'
+autocmd FileType cs xmap <silent> <Leader>f :OmniSharpCodeFormat<CR>
+autocmd FileType cs nmap <silent> <Leader>f :OmniSharpCodeFormat<CR>
+autocmd FileType cs xmap <silent> <Leader>u :OmniSharpFixUsings<CR>
+autocmd FileType cs nmap <silent> <Leader>u :OmniSharpFixUsings<CR>
 
 "*****************************************************************************
 "*****************************************************************************
