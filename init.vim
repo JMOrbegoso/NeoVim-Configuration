@@ -49,6 +49,7 @@ Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+Plug 'RRethy/vim-illuminate'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 if isdirectory('/usr/local/opt/fzf')
