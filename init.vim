@@ -563,3 +563,9 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+"*****************************************************************************
+"" Templates
+"*****************************************************************************
+
+:autocmd BufNewFile *.cs 0r ~/.config/nvim/templates/csharp-class.cs

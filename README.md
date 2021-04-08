@@ -36,6 +36,10 @@ sudo apt install ccls
 
 Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim, or copy its content to the file opened by Nvim when we use the command: **:CocConfig**.
 
+## Templates
+
+Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates.
+
 ## Extra
 
 ### Sort usings with OmniSharp
