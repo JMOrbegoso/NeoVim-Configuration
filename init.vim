@@ -569,3 +569,6 @@ endif
 "*****************************************************************************
 
 :autocmd BufNewFile *.cs 0r ~/.config/nvim/templates/csharp-class.cs
+
+:autocmd BufNewFile *.cpp 0r ~/.config/nvim/templates/skeleton.cpp
+:autocmd BufNewFile *.h 0r ~/.config/nvim/templates/skeleton.h
