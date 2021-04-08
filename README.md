@@ -42,6 +42,10 @@ Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates
 
 ## Extra
 
+### NERDTree file icons
+
+In order to see the icons in the NERDTree file system explorer, the console needs to use a [Nerd font](https://github.com/ryanoasis/nerd-fonts#patched-fonts).
+
 ### Sort usings with OmniSharp
 
 OmniSharp by default do not sort the usings in a cs file, you can change this by specifying it in the OmniSharp configuration file located on ~/.omnisharp/omnisharp.json adding the next values:
