@@ -32,9 +32,9 @@ using System.Xml.XPath;
 
 namespace App.Classes
 {
-    public class NewClass
+    public class ${2:`!v expand("%:t:r")`}
     {
-        public NewClass()
+        public ${3:`!v expand("%:t:r")`}()
         {
 
         }

@@ -34,9 +34,9 @@ using Xunit;
 
 namespace App.Tests
 {
-    public class NewTestClass
+    public class ${2:`!v expand("%:t:r")`}
     {
-        public NewTestClass()
+        public ${3:`!v expand("%:t:r")`}()
         {
             ${1}
         }

@@ -32,7 +32,7 @@ using System.Xml.XPath;
 
 namespace App.Interfaces
 {
-    public interface INewInterface
+    public interface ${2:`!v expand("%:t:r")`}
     {
         ${1}
     }
