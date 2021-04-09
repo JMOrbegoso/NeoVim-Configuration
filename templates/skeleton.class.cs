@@ -38,5 +38,7 @@ namespace App.Classes
         {
 
         }
+
+        ${1}
     }
 }

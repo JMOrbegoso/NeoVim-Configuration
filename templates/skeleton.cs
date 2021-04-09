@@ -34,6 +34,6 @@ namespace App.Classes
 {
     public class NewClass
     {
-        
+        ${1}
     }
 }

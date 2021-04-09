@@ -8,4 +8,6 @@ using namespace std;
 
 #pragma region functions
 
+${1}
+
 #pragma endregion

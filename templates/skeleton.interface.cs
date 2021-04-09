@@ -34,6 +34,6 @@ namespace App.Interfaces
 {
     public interface INewInterface
     {
-
+        ${1}
     }
 }

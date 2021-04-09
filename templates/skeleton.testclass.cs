@@ -34,11 +34,11 @@ using Xunit;
 
 namespace App.Tests
 {
-    public interface NewTestClass
+    public class NewTestClass
     {
         public NewTestClass()
         {
-
+            ${1}
         }
 
         [Fact]
