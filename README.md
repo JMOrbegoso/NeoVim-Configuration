@@ -40,6 +40,16 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 
 Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates.
 
+### Avaliable templates
+
+| Language | Specification | File Extension | Trigger                      |
+| -------- | ------------- | -------------- | ---------------------------- |
+| C++      | Cpp file      | cpp            | -                            |
+| C++      | Header file   | h              | -                            |
+| C#       | Interface     | cs             | File name start with "I".    |
+| C#       | Test class    | cs             | File name ends with "Tests". |
+| C#       | Class         | cs             | Any other file name.         |
+
 ## Extra
 
 ### NERDTree file icons
