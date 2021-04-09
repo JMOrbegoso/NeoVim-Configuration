@@ -51,6 +51,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'RRethy/vim-illuminate'
+Plug 'pgilad/vim-skeletons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 if isdirectory('/usr/local/opt/fzf')
@@ -565,18 +566,6 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
-"*****************************************************************************
-"" Templates
-"*****************************************************************************
-
-:autocmd BufNewFile *.cpp 0r ~/.config/nvim/templates/skeleton.cpp
-:autocmd BufNewFile *.h 0r ~/.config/nvim/templates/skeleton.h
-
-autocmd BufNewFile *.cs
-            \  if bufname('') =~# '/*I.*.cs'
-            \|   :0r ~/.config/nvim/templates/csharp-interface.cs
-            \| elseif bufname('') =~# '/*Tests.cs'
-            \|   :0r ~/.config/nvim/templates/csharp-testclass.cs
-            \| else
-            \|   :0r ~/.config/nvim/templates/csharp-class.cs
-            \| endif
+"" Templates with vim-skeletons
+let skeletons#autoRegister = 1
+let skeletons#skeletonsDir = "~/.config/nvim/templates"

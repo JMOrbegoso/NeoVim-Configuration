@@ -38,17 +38,25 @@ Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim
 
 ## Templates
 
-Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates.
+Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates, remember that each skeleton file name must follow the next pattern taken from vim-skeletons documentation:
+
+`skeleton-name.<extra>.<filetype>`, for example:
+
+- `skeleton.js` for Javascript files.
+- `skeleton.angular.js` for Angular.js Javascript files.
+- `skeleton.backbone.js` for Backbone.js Javascript files.
+- `skeleton.jquery.js` for Jquery Javascript files.
 
 ### Avaliable templates
 
-| Language | Specification | File Extension | Trigger                      |
-| -------- | ------------- | -------------- | ---------------------------- |
-| C++      | Cpp file      | cpp            | -                            |
-| C++      | Header file   | h              | -                            |
-| C#       | Interface     | cs             | File name start with "I".    |
-| C#       | Test class    | cs             | File name ends with "Tests". |
-| C#       | Class         | cs             | Any other file name.         |
+| Language | File Extension | Specification |
+| -------- | -------------- | ------------- |
+| C++      | cpp            | Cpp file      |
+| C++      | h              | Header file   |
+| C#       | cs             | Interface     |
+| C#       | cs             | Test class    |
+| C#       | cs             | Class         |
+| C#       | cs             | Default       |
 
 ## Extra
 
