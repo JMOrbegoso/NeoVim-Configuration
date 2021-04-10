@@ -78,34 +78,34 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ## Mappings table
 
-| Action                                  | Mapping         | Mode              |
-| --------------------------------------- | --------------- | ----------------- |
-| Save                                    | Ctrl + s        | Normal            |
-| Undo                                    | Ctrl + z        | Normal            |
-| Redo                                    | Ctrl + r        | Normal            |
-| Copy selection                          | y               | Visual            |
-| Copy the current line                   | Y               | Visual            |
-| Cut selection                           | d               | Visual            |
-| Cut the current line                    | D               | Visual            |
-| Paste                                   | p               | Normal and Visual |
-| Replicate current line                  | yy + p          | Normal            |
-| Open new tab                            | leader key + t  | Normal            |
-| Close current buffer                    | leader key + c  | Normal            |
-| Navigate to the next tab                | Tab             | Normal            |
-| Navigate to the previous tab            | Tab + Shift     | Normal            |
-| Switch splitted window ↑                | ↑               | Normal and Visual |
-| Switch splitted window ←                | ←               | Normal and Visual |
-| Switch splitted window →                | →               | Normal and Visual |
-| Switch splitted window ↓                | ↓               | Normal and Visual |
-| Resize splitted window vertical up      | leader key + ↑  | Normal            |
-| Resize splitted window vertical down    | leader key + ↓  | Normal            |
-| Resize splitted window horizontal left  | leader key + ←  | Normal            |
-| Resize splitted window horizontal right | leader key + →  | Normal            |
-| Buffer navigation ←                     | leader key + q  | Normal            |
-| Buffer navigation →                     | leader key + w  | Normal            |
-| Format current buffer                   | leader key + f  | Normal            |
-| C#: Sort usings                         | leader key + u  | Normal            |
-| Go to definition                        | leader key + gd | Normal            |
-| Go to type definition                   | leader key + gt | Normal            |
-| Go to implementation                    | leader key + gi | Normal            |
-| Go to references                        | leader key + gr | Normal            |
+| Action                                  | Mapping            | Mode              |
+| --------------------------------------- | ------------------ | ----------------- |
+| Save                                    | Ctrl + s           | Normal            |
+| Undo                                    | Ctrl + z           | Normal            |
+| Redo                                    | Ctrl + r           | Normal            |
+| Copy selection                          | y                  | Visual            |
+| Copy the current line                   | Y                  | Visual            |
+| Cut selection                           | d                  | Visual            |
+| Cut the current line                    | D                  | Visual            |
+| Paste                                   | p                  | Normal and Visual |
+| Replicate current line                  | yy + p             | Normal            |
+| Open new tab                            | Leader key + t     | Normal            |
+| Close current buffer                    | Leader key + c     | Normal            |
+| Navigate to the next tab                | Tab                | Normal            |
+| Navigate to the previous tab            | Tab + Shift        | Normal            |
+| Switch splitted window ↑                | ↑                  | Normal and Visual |
+| Switch splitted window ←                | ←                  | Normal and Visual |
+| Switch splitted window →                | →                  | Normal and Visual |
+| Switch splitted window ↓                | ↓                  | Normal and Visual |
+| Resize splitted window vertical up      | Leader key + ↑     | Normal            |
+| Resize splitted window vertical down    | Leader key + ↓     | Normal            |
+| Resize splitted window horizontal left  | Leader key + ←     | Normal            |
+| Resize splitted window horizontal right | Leader key + →     | Normal            |
+| Buffer navigation ←                     | Leader key + q     | Normal            |
+| Buffer navigation →                     | Leader key + w     | Normal            |
+| Format current buffer                   | Leader key + f     | Normal            |
+| C#: Sort usings                         | Leader key + u     | Normal            |
+| Go to definition                        | Leader key + g + d | Normal            |
+| Go to type definition                   | Leader key + g + t | Normal            |
+| Go to implementation                    | Leader key + g + i | Normal            |
+| Go to references                        | Leader key + g + r | Normal            |
