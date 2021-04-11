@@ -104,7 +104,6 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Buffer navigation ←                     | Leader key + q     | Normal            |
 | Buffer navigation →                     | Leader key + w     | Normal            |
 | Format current buffer                   | Leader key + f     | Normal            |
-| C#: Sort usings                         | Leader key + u     | Normal            |
 | Go to definition                        | Leader key + c + d | Normal            |
 | Go to type definition                   | Leader key + c + t | Normal            |
 | Go to implementation                    | Leader key + c + i | Normal            |

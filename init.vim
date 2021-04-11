@@ -513,10 +513,8 @@ let g:yats_host_keyword = 1
 
 "" C#
 let g:OmniSharp_selector_ui = 'fzf'
-autocmd FileType cs xmap <silent> <Leader>f :OmniSharpCodeFormat<CR>
-autocmd FileType cs nmap <silent> <Leader>f :OmniSharpCodeFormat<CR>
-autocmd FileType cs xmap <silent> <Leader>u :OmniSharpFixUsings<CR>
-autocmd FileType cs nmap <silent> <Leader>u :OmniSharpFixUsings<CR>
+autocmd FileType cs xmap <silent> <Leader>f :OmniSharpCodeFormat<CR> <bar> :OmniSharpFixUsings<CR>
+autocmd FileType cs nmap <silent> <Leader>f :OmniSharpCodeFormat<CR> <bar> :OmniSharpFixUsings<CR>
 
 autocmd FileType cs nmap <silent> <buffer> <Leader>cd :OmniSharpGotoDefinition<CR>
 autocmd FileType cs nmap <silent> <buffer> <Leader>ct :OmniSharpFindType<CR>
