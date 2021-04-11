@@ -489,11 +489,11 @@ nnoremap <Leader>o :.Gbrowse<CR>
 xmap <silent> <Leader>f <Plug>(coc-format)
 nmap <silent> <Leader>f <Plug>(coc-format)
 
-"" GoTo code navigation with Coc.Vim
-nmap <silent> <Leader>gd <Plug>(coc-definition)
-nmap <silent> <Leader>gt <Plug>(coc-type-definition)
-nmap <silent> <Leader>gi <Plug>(coc-implementation)
-nmap <silent> <Leader>gr <Plug>(coc-references)
+"" Code navigation with Coc.Vim
+nmap <silent> <Leader>cd <Plug>(coc-definition)
+nmap <silent> <Leader>ct <Plug>(coc-type-definition)
+nmap <silent> <Leader>ci <Plug>(coc-implementation)
+nmap <silent> <Leader>cr <Plug>(coc-references)
 
 "*****************************************************************************
 "" Custom configs
@@ -517,10 +517,10 @@ autocmd FileType cs nmap <silent> <Leader>f :OmniSharpCodeFormat<CR>
 autocmd FileType cs xmap <silent> <Leader>u :OmniSharpFixUsings<CR>
 autocmd FileType cs nmap <silent> <Leader>u :OmniSharpFixUsings<CR>
 
-autocmd FileType cs nmap <silent> <buffer> <Leader>gd :OmniSharpGotoDefinition<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>gt :OmniSharpFindType<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>gi :OmniSharpFindImplementations<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>gr :OmniSharpFindUsages<CR>
+autocmd FileType cs nmap <silent> <buffer> <Leader>cd :OmniSharpGotoDefinition<CR>
+autocmd FileType cs nmap <silent> <buffer> <Leader>ct :OmniSharpFindType<CR>
+autocmd FileType cs nmap <silent> <buffer> <Leader>ci :OmniSharpFindImplementations<CR>
+autocmd FileType cs nmap <silent> <buffer> <Leader>cr :OmniSharpFindUsages<CR>
 
 "*****************************************************************************
 "*****************************************************************************
