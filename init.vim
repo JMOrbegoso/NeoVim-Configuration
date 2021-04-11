@@ -385,6 +385,7 @@ noremap <Leader>gp :Git pull<CR>
 noremap <Leader>go :Git push origin 
 noremap <Leader>gb :Git branch 
 noremap <Leader>gk :Git checkout 
+noremap <Leader>gu :Git reset --soft HEAD^1<CR>
 
 "" Session management
 nnoremap <leader>so :OpenSession<Space>

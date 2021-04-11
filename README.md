@@ -120,3 +120,4 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Git push origin                         | Leader key + g + o | Normal            |
 | Git branch                              | leader key + g + b | Normal            |
 | Git checkout                            | leader key + g + k | Normal            |
+| Git undo last commit to stage area      | leader key + g + u | Normal            |
