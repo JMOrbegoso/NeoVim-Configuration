@@ -109,3 +109,14 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Go to type definition                   | Leader key + g + t | Normal            |
 | Go to implementation                    | Leader key + g + i | Normal            |
 | Go to references                        | Leader key + g + r | Normal            |
+| Git log                                 | Leader key + g + l | Normal            |
+| Git status                              | Leader key + g + s | Normal            |
+| Git diff                                | Leader key + g + d | Normal            |
+| Git add current file                    | Leader key + g + w | Normal            |
+| Git add all files                       | Leader key + g + a | Normal            |
+| Git reset                               | leader key + g + r | Normal            |
+| Git commit                              | Leader key + g + c | Normal            |
+| Git pull                                | Leader key + g + p | Normal            |
+| Git push origin                         | Leader key + g + o | Normal            |
+| Git branch                              | leader key + g + b | Normal            |
+| Git checkout                            | leader key + g + c | Normal            |

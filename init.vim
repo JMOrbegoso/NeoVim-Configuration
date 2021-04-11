@@ -374,14 +374,17 @@ nnoremap <silent> <Leader><up> :resize +5<CR>
 nnoremap <silent> <Leader><down> :resize -5<CR>
 
 "" Git
-noremap <Leader>ga :Gwrite<CR>
-noremap <Leader>gc :Gcommit<CR>
-noremap <Leader>gsh :Gpush<CR>
-noremap <Leader>gll :Gpull<CR>
-noremap <Leader>gs :Gstatus<CR>
-noremap <Leader>gb :Gblame<CR>
-noremap <Leader>gd :Gvdiff<CR>
-noremap <Leader>gr :Gremove<CR>
+noremap <Leader>gl :Git log<CR>
+noremap <Leader>gs :Git status<CR>
+noremap <Leader>gd :Git diff<CR>
+noremap <Leader>gw :Gwrite<CR>
+noremap <Leader>ga :Git add .<CR>
+noremap <Leader>gr :Git reset<CR>
+noremap <Leader>gc :Git commit<CR>
+noremap <Leader>gp :Git pull<CR>
+noremap <Leader>go :Git push origin 
+noremap <Leader>gb :Git branch 
+noremap <Leader>gc :Git checkout 
 
 "" Session management
 nnoremap <leader>so :OpenSession<Space>
