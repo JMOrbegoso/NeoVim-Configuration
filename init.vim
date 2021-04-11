@@ -350,10 +350,6 @@ noremap u <nop>
 "" Disable process suspension on Visual mode
 vmap <C-z> <nop>
 
-"" Refresh init.vim configuration
-nmap <F5> :source ~/.config/nvim/init.vim<CR>
-vmap <F5> :source ~/.config/nvim/init.vim<CR>
-
 "" Save current buffer
 nnoremap <C-s> :w<CR>
 
