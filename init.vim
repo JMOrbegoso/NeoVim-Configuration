@@ -384,7 +384,7 @@ noremap <Leader>gc :Git commit<CR>
 noremap <Leader>gp :Git pull<CR>
 noremap <Leader>go :Git push origin 
 noremap <Leader>gb :Git branch 
-noremap <Leader>gc :Git checkout 
+noremap <Leader>gk :Git checkout 
 
 "" Session management
 nnoremap <leader>so :OpenSession<Space>
