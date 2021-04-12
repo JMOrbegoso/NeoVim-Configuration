@@ -52,6 +52,7 @@ Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'RRethy/vim-illuminate'
 Plug 'pgilad/vim-skeletons'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 if isdirectory('/usr/local/opt/fzf')
@@ -496,9 +497,13 @@ nmap <silent> <Leader>cr <Plug>(coc-references)
 "" Custom configs
 "*****************************************************************************
 
-" C/C++
+"" C/C++
 autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+"" C++ Syntax highlighting
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
 
 "" HTML
 "" for html files, 2 spaces
