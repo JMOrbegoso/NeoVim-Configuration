@@ -390,8 +390,16 @@ nnoremap <leader>ss :SaveSession<Space>
 nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
+"" Open new buffer
+noremap <silent> <leader>t :enew<CR>
+
 "" Close current buffer
 noremap <silent> <leader>c :bd<CR>
+
+"" Buffer navigation
+noremap <silent> <leader>q :bp<CR>
+noremap <silent> <leader>w :bn<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
 
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
@@ -421,7 +429,6 @@ if executable('rg')
 endif
 
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
-nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
@@ -457,10 +464,6 @@ if has('macunix')
   vmap <C-x> :!pbcopy<CR>
   vmap <C-c> :w !pbcopy<CR><CR>
 endif
-
-"" Buffer navigation
-noremap <leader>q :bp<CR>
-noremap <leader>w :bn<CR>
 
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>

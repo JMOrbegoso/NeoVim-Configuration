@@ -89,7 +89,11 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Cut the current line                    | D                  | Visual            |
 | Paste                                   | p                  | Normal and Visual |
 | Replicate current line                  | yy + p             | Normal            |
+| Open new buffer                         | Leader key + t     | Normal            |
 | Close current buffer                    | Leader key + c     | Normal            |
+| Buffer navigation ←                     | Leader key + q     | Normal            |
+| Buffer navigation →                     | Leader key + w     | Normal            |
+| Search open buffer                      | Leader key + b     | Normal            |
 | Switch splitted window ↑                | ↑                  | Normal and Visual |
 | Switch splitted window ←                | ←                  | Normal and Visual |
 | Switch splitted window →                | →                  | Normal and Visual |
@@ -98,8 +102,6 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Resize splitted window vertical down    | Leader key + ↓     | Normal            |
 | Resize splitted window horizontal left  | Leader key + ←     | Normal            |
 | Resize splitted window horizontal right | Leader key + →     | Normal            |
-| Buffer navigation ←                     | Leader key + q     | Normal            |
-| Buffer navigation →                     | Leader key + w     | Normal            |
 | Format current buffer                   | Leader key + f     | Normal            |
 | Go to definition                        | Leader key + c + d | Normal            |
 | Go to type definition                   | Leader key + c + t | Normal            |
