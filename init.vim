@@ -390,15 +390,8 @@ nnoremap <leader>ss :SaveSession<Space>
 nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
-"" Open new tab
-nnoremap <silent> <leader>t :tabnew<CR>
-
 "" Close current buffer
 noremap <silent> <leader>c :bd<CR>
-
-"" Tabs navigation
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT
 
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
