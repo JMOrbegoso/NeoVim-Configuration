@@ -53,6 +53,7 @@ Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'RRethy/vim-illuminate'
 Plug 'pgilad/vim-skeletons'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'caenrique/nvim-toggle-terminal'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 if isdirectory('/usr/local/opt/fzf')
@@ -279,9 +280,6 @@ let Grep_Default_Options = '-IR'
 let Grep_Skip_Files = '*.log *.db'
 let Grep_Skip_Dirs = '.git node_modules'
 
-"" Terminal emulation
-nnoremap <silent> <leader>sh :terminal<CR>
-
 "" Fzf.vim
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
@@ -481,6 +479,13 @@ nmap <silent> <Leader>cd <Plug>(coc-definition)
 nmap <silent> <Leader>ct <Plug>(coc-type-definition)
 nmap <silent> <Leader>ci <Plug>(coc-implementation)
 nmap <silent> <Leader>cr <Plug>(coc-references)
+
+"" Terminal emulation
+nnoremap <silent> <leader>te :ToggleTerminal<CR>
+tnoremap <silent> <leader>te <C-\><C-n>:ToggleTerminal<CR>
+
+"" ESC to close the terminal mode
+tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 
 "*****************************************************************************
 "" Custom configs
