@@ -119,3 +119,5 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Git branch                              | leader key + g + b | Normal            |
 | Git checkout                            | leader key + g + k | Normal            |
 | Git undo last commit to stage area      | leader key + g + u | Normal            |
+| Find files on the same folder           | leader key + e     | Normal            |
+| Command history                         | leader key + y     | Normal            |
