@@ -84,7 +84,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "*****************************************************************************
 
 "" C/C++
-Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
 Plug 'ludwig/split-manpage.vim'
 
 "" HTML
