@@ -80,17 +80,16 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 | Action                                  | Mapping        | Mode                |
 | --------------------------------------- | -------------- | ------------------- |
-| Save                                    | Ctrl + s       | Normal              |
-| Save                                    | Leader + s     | Normal              |
+| Save current buffer                     | Ctrl + s       | Normal              |
+| Save all open buffers                   | Leader + s     | Normal              |
 | Undo                                    | Ctrl + z       | Normal              |
 | Redo                                    | Ctrl + r       | Normal              |
 | Copy selection                          | y              | Visual              |
-| Copy the current line                   | Y              | Visual              |
+| Copy the current line                   | yy             | Visual              |
 | Cut selection                           | d              | Visual              |
-| Cut the current line                    | D              | Visual              |
+| Cut the current line                    | dd             | Visual              |
 | Paste                                   | p              | Normal and Visual   |
-| Replicate current line                  | yy + p         | Normal              |
-| Comment / Uncomment portion code        | g + c          | Normal              |
+| Comment / Uncomment code portion        | g + c          | Normal and Visual   |
 | Open new buffer                         | Leader + t     | Normal              |
 | Close current buffer                    | Leader + c     | Normal              |
 | Buffer navigation ←                     | Leader + q     | Normal              |

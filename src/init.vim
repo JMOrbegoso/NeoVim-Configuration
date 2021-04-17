@@ -297,6 +297,7 @@ if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
   set grepprg=ag\ --nogroup\ --nocolor
 endif
+
 "" Ripgrep
 if executable('rg')
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
@@ -375,7 +376,9 @@ vmap <C-z> <nop>
 
 "" Save current buffer
 nnoremap <C-s> :w<CR>
-nnoremap <Leader>s :w<CR>
+
+"" Save all open buffers
+nnoremap <Leader>s :wa<CR>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
