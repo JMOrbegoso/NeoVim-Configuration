@@ -76,51 +76,85 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 }
 ```
 
-## Mappings table
+## Mapping tables
 
-| Action                                  | Mapping        | Mode                |
-| --------------------------------------- | -------------- | ------------------- |
-| Save current buffer                     | Ctrl + s       | Normal              |
-| Save all open buffers                   | Leader + s     | Normal              |
-| Undo                                    | Ctrl + z       | Normal              |
-| Redo                                    | Ctrl + r       | Normal              |
-| Copy selection                          | y              | Visual              |
-| Copy the current line                   | yy             | Visual              |
-| Cut selection                           | d              | Visual              |
-| Cut the current line                    | dd             | Visual              |
-| Paste                                   | p              | Normal and Visual   |
-| Comment / Uncomment code portion        | g + c          | Normal and Visual   |
-| Open new buffer                         | Leader + t     | Normal              |
-| Close current buffer                    | Leader + c     | Normal              |
-| Buffer navigation ←                     | Leader + q     | Normal              |
-| Buffer navigation →                     | Leader + w     | Normal              |
-| Search open buffer                      | Leader + b     | Normal              |
-| Switch splitted window ↑                | ↑              | Normal and Visual   |
-| Switch splitted window ←                | ←              | Normal and Visual   |
-| Switch splitted window →                | →              | Normal and Visual   |
-| Switch splitted window ↓                | ↓              | Normal and Visual   |
-| Resize splitted window vertical up      | Leader + ↑     | Normal              |
-| Resize splitted window vertical down    | Leader + ↓     | Normal              |
-| Resize splitted window horizontal left  | Leader + ←     | Normal              |
-| Resize splitted window horizontal right | Leader + →     | Normal              |
-| Format current buffer                   | Leader + f     | Normal              |
-| Go to definition                        | Leader + c + d | Normal              |
-| Go to type definition                   | Leader + c + t | Normal              |
-| Go to implementation                    | Leader + c + i | Normal              |
-| Go to references                        | Leader + c + r | Normal              |
-| Git log                                 | Leader + g + l | Normal              |
-| Git status                              | Leader + g + s | Normal              |
-| Git diff                                | Leader + g + d | Normal              |
-| Git add current file                    | Leader + g + w | Normal              |
-| Git add all files                       | Leader + g + a | Normal              |
-| Git reset                               | Leader + g + r | Normal              |
-| Git commit                              | Leader + g + c | Normal              |
-| Git pull                                | Leader + g + p | Normal              |
-| Git push origin                         | Leader + g + o | Normal              |
-| Git branch                              | Leader + g + b | Normal              |
-| Git checkout                            | Leader + g + k | Normal              |
-| Git undo last commit to stage area      | Leader + g + u | Normal              |
-| Find files on the same folder           | Leader + e     | Normal              |
-| Command history                         | Leader + y     | Normal              |
-| Toggle terminal                         | Leader + t + e | Normal and Terminal |
-| Close Terminal mode                     | ESC            | Terminal            |
+### Basic mappings
+
+| Action              | Mapping        | Mode                |
+| ------------------- | -------------- | ------------------- |
+| Toggle terminal     | Leader + t + e | Normal and Terminal |
+| Close Terminal mode | ESC            | Terminal            |
+| Command history     | Leader + y     | Normal              |
+
+### Basic write mappings
+
+| Action                           | Mapping    | Mode              |
+| -------------------------------- | ---------- | ----------------- |
+| Save current buffer              | Ctrl + s   | Normal            |
+| Save all open buffers            | Leader + s | Normal            |
+| Undo                             | Ctrl + z   | Normal            |
+| Redo                             | Ctrl + r   | Normal            |
+| Copy selection                   | y          | Visual            |
+| Copy the current line            | yy         | Visual            |
+| Cut selection                    | d          | Visual            |
+| Cut the current line             | dd         | Visual            |
+| Paste                            | p          | Normal and Visual |
+| Comment / Uncomment code portion | g + c      | Normal and Visual |
+
+### Buffer mappings
+
+| Action               | Mapping    | Mode   |
+| -------------------- | ---------- | ------ |
+| Open new buffer      | Leader + t | Normal |
+| Close current buffer | Leader + c | Normal |
+| Buffer navigation ←  | Leader + q | Normal |
+| Buffer navigation →  | Leader + w | Normal |
+| Search open buffer   | Leader + b | Normal |
+
+### Splitted windows mappings
+
+| Action                                  | Mapping    | Mode              |
+| --------------------------------------- | ---------- | ----------------- |
+| Switch splitted window ↑                | ↑          | Normal and Visual |
+| Switch splitted window ←                | ←          | Normal and Visual |
+| Switch splitted window →                | →          | Normal and Visual |
+| Switch splitted window ↓                | ↓          | Normal and Visual |
+| Resize splitted window vertical up      | Leader + ↑ | Normal            |
+| Resize splitted window vertical down    | Leader + ↓ | Normal            |
+| Resize splitted window horizontal left  | Leader + ← | Normal            |
+| Resize splitted window horizontal right | Leader + → | Normal            |
+
+### Code syntax mappings
+
+| Action                | Mapping        | Mode   |
+| --------------------- | -------------- | ------ |
+| Format current buffer | Leader + f     | Normal |
+| Go to definition      | Leader + c + d | Normal |
+| Go to type definition | Leader + c + t | Normal |
+| Go to implementation  | Leader + c + i | Normal |
+| Go to references      | Leader + c + r | Normal |
+
+### Git mappings
+
+| Action                             | Mapping        | Mode   |
+| ---------------------------------- | -------------- | ------ |
+| Git log                            | Leader + g + l | Normal |
+| Git status                         | Leader + g + s | Normal |
+| Git diff                           | Leader + g + d | Normal |
+| Git add current file               | Leader + g + w | Normal |
+| Git add all files                  | Leader + g + a | Normal |
+| Git reset                          | Leader + g + r | Normal |
+| Git commit                         | Leader + g + c | Normal |
+| Git pull                           | Leader + g + p | Normal |
+| Git push origin                    | Leader + g + o | Normal |
+| Git branch                         | Leader + g + b | Normal |
+| Git checkout                       | Leader + g + k | Normal |
+| Git undo last commit to stage area | Leader + g + u | Normal |
+
+### File mappings
+
+| Action                            | Mapping    | Mode   |
+| --------------------------------- | ---------- | ------ |
+| Open NERDTree in splitted windows | F2         | Normal |
+| Toggle NERDTree                   | F3         | Normal |
+| Find files on the same folder     | Leader + e | Normal |
