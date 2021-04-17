@@ -9,11 +9,6 @@ else
   let curl_exists=expand('curl')
 endif
 
-let g:vim_bootstrap_langs = "c,html,typescript,c#"
-let g:vim_bootstrap_editor = "nvim"				" nvim or vim
-let g:vim_bootstrap_theme = "dracula"
-let g:vim_bootstrap_frams = ""
-
 if !filereadable(vimplug_exists)
   if !executable(curl_exists)
     echoerr "You have to install curl or first install vim-plug yourself!"
@@ -35,7 +30,6 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 
 Plug 'tpope/vim-commentary'
-Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'pgilad/vim-skeletons'
 Plug 'caenrique/nvim-toggle-terminal'
 
