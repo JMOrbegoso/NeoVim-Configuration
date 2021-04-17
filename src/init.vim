@@ -109,17 +109,6 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'nickspoons/vim-sharpenup'
 
-"" CoC extensions
-let g:coc_global_extensions = [
-  \'coc-json',
-  \'coc-git',
-  \'coc-html',
-  \'coc-tsserver',
-  \'coc-prettier',
-  \'coc-omnisharp',
-  \'coc-sql',
-  \]
-
 "*****************************************************************************
 "*****************************************************************************
 
@@ -304,6 +293,17 @@ if executable('rg')
   set grepprg=rg\ --vimgrep
   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 endif
+
+"" Coc.nvim extensions
+let g:coc_global_extensions = [
+  \'coc-json',
+  \'coc-git',
+  \'coc-html',
+  \'coc-tsserver',
+  \'coc-prettier',
+  \'coc-omnisharp',
+  \'coc-sql',
+  \]
 
 "" Ale
 let g:ale_disable_lsp = 1 "" Disable Ale LSP features already provided by coc.nvim such as auto-completion
