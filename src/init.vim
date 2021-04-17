@@ -85,6 +85,9 @@ Plug 'pgilad/vim-skeletons'
 "" Terminal
 Plug 'caenrique/nvim-toggle-terminal'
 
+"" Graphical debugger
+Plug 'puremourning/vimspector'
+
 "" Visual Themes
 Plug 'dracula/vim', { 'as': 'dracula' }
 
@@ -254,6 +257,11 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
+"" Vimspector
+let g:vimspector_code_minwidth = 90
+let g:vimspector_terminal_maxwidth = 75
+let g:vimspector_terminal_minwidth = 20
+
 "*****************************************************************************
 "" Abbreviations
 "*****************************************************************************
@@ -304,6 +312,14 @@ if executable('rg')
   set grepprg=rg\ --vimgrep
   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 endif
+
+"" Vimspector
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
+let g:vimspector_install_gadgets = [
+  \'vscode-cpptools',
+  \'vscode-node-debug2',
+  \'netcoredbg',
+  \]
 
 "*****************************************************************************
 "" Commands
@@ -498,6 +514,16 @@ tnoremap <silent> <Leader>te <C-\><C-n>:ToggleTerminal<CR>
 
 "" ESC to close the terminal mode
 tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
+
+"" Debug
+nmap <Leader>dx :VimspectorReset<CR>
+nmap <Leader>de :VimspectorEval
+nmap <Leader>dw :VimspectorWatch
+nmap <Leader>ds :VimspectorShowOutput
+nmap <Leader>dn :VimspectorStepOver<CR>
+nmap <Leader>di :VimspectorStepInto<CR>
+nmap <Leader>do :VimspectorStepOut<CR>
+nmap <Leader>dc :call vimspector#ClearBreakpoints()<CR>
 
 "*****************************************************************************
 "" Custom configs

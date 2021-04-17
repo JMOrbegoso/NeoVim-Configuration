@@ -58,6 +58,35 @@ Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates
 | C#       | cs             | Class         |
 | C#       | cs             | Default       |
 
+## Debug
+
+The plugin Vimspector is used to graphical debug, to use it, after open NeoVim and install all the plugins,
+use the following command for Vimspector to install the debugging requirements in the available languages: **:VimspectorInstall**.
+
+### Vimspector parameters file
+
+The Vimspector plugin require a parameters file to debug a project, just create a **.vimspector.json** file using the available templates for that and customize it according the project properties.
+
+### C++ debug requirements
+
+Before debug any C++ project, first install **gdb**:
+
+Arch based distros:
+
+```bash
+sudo pacman -S gdb
+```
+
+Debian based distros:
+
+```bash
+sudo apt install gdb
+```
+
+### Update the gadgets
+
+To update the gadgets to the latest supported versions you can use the command **:VimspectorUpdate**.
+
 ## Extra
 
 ### NERDTree file icons
@@ -158,3 +187,22 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Open NERDTree in splitted windows | F2         | Normal |
 | Toggle NERDTree                   | F3         | Normal |
 | Find files on the same folder     | Leader + e | Normal |
+
+### Debug Mappings
+
+| Action                             | Mapping           | Mode   |
+| ---------------------------------- | ----------------- | ------ |
+| Start/Continue debugging           | F5                | Normal |
+| Stop debugging                     | Shift + F5        | Normal |
+| Restart debugging                  | Ctrl + Shift + F5 | Normal |
+| Pause debug                        | F6                | Normal |
+| Put/Remove debug breakpoint        | F9                | Normal |
+| Add function debug breakpoint      | Shift + F9        | Normal |
+| Step Over                          | F10               | Normal |
+| Step Into                          | F11               | Normal |
+| Step out of current function scope | Shift + F11       | Normal |
+| Close debugger                     | Leader + d + x    | Normal |
+| Evaluate debug                     | Leader + d + e    | Normal |
+| Watch debug                        | Leader + d + w    | Normal |
+| Open debug output                  | Leader + d + o    | Normal |
+| Remove all the breakpoints         | Leader + d + c    | Normal |
