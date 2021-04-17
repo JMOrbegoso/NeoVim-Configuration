@@ -29,9 +29,6 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "" Plug install packages
 "*****************************************************************************
 
-Plug 'pgilad/vim-skeletons'
-Plug 'caenrique/nvim-toggle-terminal'
-
 "" Visual interface
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -81,6 +78,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "" Code Linter
 Plug 'dense-analysis/ale'
+
+"" Templates
+Plug 'pgilad/vim-skeletons'
+
+"" Terminal
+Plug 'caenrique/nvim-toggle-terminal'
 
 "" Visual Themes
 Plug 'dracula/vim', { 'as': 'dracula' }
