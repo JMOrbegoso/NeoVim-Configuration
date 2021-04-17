@@ -366,6 +366,7 @@ vmap <C-z> <nop>
 
 "" Save current buffer
 nnoremap <C-s> :w<CR>
+nnoremap <Leader>s :w<CR>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>

@@ -81,6 +81,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Action                                  | Mapping        | Mode                |
 | --------------------------------------- | -------------- | ------------------- |
 | Save                                    | Ctrl + s       | Normal              |
+| Save                                    | Leader + s     | Normal              |
 | Undo                                    | Ctrl + z       | Normal              |
 | Redo                                    | Ctrl + r       | Normal              |
 | Copy selection                          | y              | Visual              |
