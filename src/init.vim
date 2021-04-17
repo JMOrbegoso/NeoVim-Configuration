@@ -54,6 +54,7 @@ Plug 'RRethy/vim-illuminate'
 Plug 'pgilad/vim-skeletons'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'caenrique/nvim-toggle-terminal'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 if isdirectory('/usr/local/opt/fzf')
