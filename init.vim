@@ -274,7 +274,7 @@ nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 "" Grep.vim
-nnoremap <silent> <leader>f :Rgrep<CR>
+nnoremap <silent> <Leader>f :Rgrep<CR>
 let Grep_Default_Options = '-IR'
 let Grep_Skip_Files = '*.log *.db'
 let Grep_Skip_Dirs = '.git node_modules'
@@ -398,30 +398,30 @@ noremap <Leader>gk :Git checkout
 noremap <Leader>gu :Git reset --soft HEAD^1<CR>
 
 "" Session management
-nnoremap <leader>so :OpenSession<Space>
-nnoremap <leader>ss :SaveSession<Space>
-nnoremap <leader>sd :DeleteSession<CR>
-nnoremap <leader>sc :CloseSession<CR>
+nnoremap <Leader>so :OpenSession<Space>
+nnoremap <Leader>ss :SaveSession<Space>
+nnoremap <Leader>sd :DeleteSession<CR>
+nnoremap <Leader>sc :CloseSession<CR>
 
 "" Open new buffer
-noremap <silent> <leader>t :enew<CR>
+noremap <silent> <Leader>t :enew<CR>
 
 "" Close current buffer
-noremap <silent> <leader>c :bd<CR>
+noremap <silent> <Leader>c :bd<CR>
 
 "" Buffer navigation
-noremap <silent> <leader>q :bp<CR>
-noremap <silent> <leader>w :bn<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
+noremap <silent> <Leader>q :bp<CR>
+noremap <silent> <Leader>w :bn<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
 
 "" Set working directory
-nnoremap <leader>. :lcd %:p:h<CR>
+nnoremap <Leader>. :lcd %:p:h<CR>
 
 cnoremap <C-p> <C-r>=expand("%:p:h") . "/" <CR>
-nnoremap <silent> <leader>e :FZF -m<CR>
+nnoremap <silent> <Leader>e :FZF -m<CR>
 
 "" Recovery commands from history through FZF
-nmap <leader>y :History:<CR>
+nmap <Leader>y :History:<CR>
 
 "" Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -456,7 +456,7 @@ if has('macunix')
 endif
 
 "" Clean search (highlight)
-nnoremap <silent> <leader><space> :noh<cr>
+nnoremap <silent> <Leader><space> :noh<cr>
 
 "" Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
@@ -480,8 +480,8 @@ nmap <silent> <Leader>ci <Plug>(coc-implementation)
 nmap <silent> <Leader>cr <Plug>(coc-references)
 
 "" Terminal emulation
-nnoremap <silent> <leader>te :ToggleTerminal<CR>
-tnoremap <silent> <leader>te <C-\><C-n>:ToggleTerminal<CR>
+nnoremap <silent> <Leader>te :ToggleTerminal<CR>
+tnoremap <silent> <Leader>te <C-\><C-n>:ToggleTerminal<CR>
 
 "" ESC to close the terminal mode
 tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
