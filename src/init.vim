@@ -34,29 +34,27 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "" Plug install packages
 "*****************************************************************************
 
+Plug 'tpope/vim-commentary'
+Plug 'editor-bootstrap/vim-bootstrap-updater'
+Plug 'pgilad/vim-skeletons'
+Plug 'caenrique/nvim-toggle-terminal'
+
+"" Visual interface
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/CSApprox'
+
+"" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+
+"" Files
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
-Plug 'vim-scripts/CSApprox'
-Plug 'Raimondi/delimitMate'
-Plug 'majutsushi/tagbar'
-Plug 'dense-analysis/ale'
-Plug 'Yggdroot/indentLine'
-Plug 'editor-bootstrap/vim-bootstrap-updater'
-Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
-Plug 'RRethy/vim-illuminate'
-Plug 'pgilad/vim-skeletons'
-Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'caenrique/nvim-toggle-terminal'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'dracula/vim', { 'as': 'dracula' }
-
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -77,8 +75,21 @@ Plug 'xolox/vim-session'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+"" Write assistants
+Plug 'Yggdroot/indentLine'
+Plug 'Raimondi/delimitMate'
+Plug 'RRethy/vim-illuminate'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'ntpeters/vim-better-whitespace'
+
 "" Code completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"" Code Linter
+Plug 'dense-analysis/ale'
+
+"" Visual Themes
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 "*****************************************************************************
 "" Custom bundles
