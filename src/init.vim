@@ -305,6 +305,9 @@ if executable('rg')
   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 endif
 
+"" Ale
+let g:ale_disable_lsp = 1 "" Disable Ale LSP features already provided by coc.nvim such as auto-completion
+
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
@@ -441,11 +444,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
-
-"" Ale
-let g:ale_linters = {
-\ 'cs': ['OmniSharp']
-\}
 
 "" Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
