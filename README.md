@@ -90,6 +90,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Cut the current line                    | D              | Visual              |
 | Paste                                   | p              | Normal and Visual   |
 | Replicate current line                  | yy + p         | Normal              |
+| Comment / Uncomment portion code        | g + c          | Normal              |
 | Open new buffer                         | Leader + t     | Normal              |
 | Close current buffer                    | Leader + c     | Normal              |
 | Buffer navigation ←                     | Leader + q     | Normal              |

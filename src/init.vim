@@ -29,7 +29,6 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "" Plug install packages
 "*****************************************************************************
 
-Plug 'tpope/vim-commentary'
 Plug 'pgilad/vim-skeletons'
 Plug 'caenrique/nvim-toggle-terminal'
 
@@ -75,6 +74,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'RRethy/vim-illuminate'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-commentary'
 
 "" Code completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
