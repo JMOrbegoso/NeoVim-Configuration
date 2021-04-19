@@ -188,6 +188,7 @@ set mouse=a " Enables the mouse usage
 set mousemodel=popup
 
 set t_Co=256
+set cursorline
 set guioptions=egmrti
 set gfn=Monospace\ 10
 
