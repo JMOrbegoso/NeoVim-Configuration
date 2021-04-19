@@ -35,6 +35,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/CSApprox'
 
+"" Visual Themes
+Plug 'sonph/onehalf', {'rtp': 'vim'}
+
 "" Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -69,7 +72,6 @@ Plug 'honza/vim-snippets'
 Plug 'Yggdroot/indentLine'
 Plug 'Raimondi/delimitMate'
 Plug 'RRethy/vim-illuminate'
-Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-commentary'
 
@@ -85,15 +87,13 @@ Plug 'pgilad/vim-skeletons'
 "" Terminal
 Plug 'caenrique/nvim-toggle-terminal'
 
-"" Visual Themes
-Plug 'dracula/vim', { 'as': 'dracula' }
-
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
 
 "" C/C++
 Plug 'ludwig/split-manpage.vim'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 "" HTML
 Plug 'hail2u/vim-css3-syntax'
@@ -182,7 +182,6 @@ set rnu " Show relative numbers on rows
 set numberwidth=1 " Size of row numbers
 
 let no_buffers_menu=1
-colorscheme dracula
 
 set mouse=a " Enables the mouse usage
 set mousemodel=popup
@@ -241,12 +240,26 @@ if exists("*fugitive#statusline")
 endif
 
 "" Vim-airline
-let g:airline_theme = 'powerlineish'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
+
+"" Visual theme
+let g:light_theme = 1
+
+if (g:light_theme)
+  set background=light
+  colorscheme onehalflight
+  let g:airline_theme = 'onehalflight'
+  let g:lsp_cxx_hl_light_bg = 1
+else
+  set background=dark
+  colorscheme onehalfdark
+  let g:airline_theme = 'onehalfdark'
+  let g:lsp_cxx_hl_light_bg = 0
+endif
 
 "*****************************************************************************
 "" Abbreviations

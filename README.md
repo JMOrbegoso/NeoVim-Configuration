@@ -36,6 +36,22 @@ sudo apt install ccls
 
 Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim, or copy its content to the file opened by Nvim when we use the command: **:CocConfig**.
 
+## Visual Theme
+
+The theme One Half is installed in its dark and light modes, to switch between them just change the value of the variable:
+
+Dark theme:
+
+```vim-script
+g:light_theme = 0
+```
+
+Light theme:
+
+```vim-script
+g:light_theme = 1
+```
+
 ## Templates
 
 Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates, remember that each skeleton file name must follow the next pattern taken from vim-skeletons documentation:
