@@ -192,6 +192,10 @@ set cursorline
 set guioptions=egmrti
 set gfn=Monospace\ 10
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
