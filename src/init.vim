@@ -109,6 +109,9 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'nickspoons/vim-sharpenup'
 
+"" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 "*****************************************************************************
 "*****************************************************************************
 
@@ -321,6 +324,7 @@ let g:coc_global_extensions = [
   \'coc-prettier',
   \'coc-omnisharp',
   \'coc-sql',
+  \'coc-markdownlint',
   \]
 
 "" Ale
@@ -540,6 +544,9 @@ autocmd FileType cs nmap <silent> <buffer> <Leader>cd :OmniSharpGotoDefinition<C
 autocmd FileType cs nmap <silent> <buffer> <Leader>ct :OmniSharpFindType<CR>
 autocmd FileType cs nmap <silent> <buffer> <Leader>ci :OmniSharpFindImplementations<CR>
 autocmd FileType cs nmap <silent> <buffer> <Leader>cr :OmniSharpFindUsages<CR>
+
+"" Markdown
+nmap <silent> <Leader>p :MarkdownPreviewToggle<CR>
 
 "*****************************************************************************
 "*****************************************************************************

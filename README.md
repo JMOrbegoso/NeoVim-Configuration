@@ -117,6 +117,12 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Paste                            | p          | Normal and Visual |
 | Comment / Uncomment code portion | g + c      | Normal and Visual |
 
+### Markdown mappings
+
+| Action                  | Mapping    | Mode   |
+| ----------------------- | ---------- | ------ |
+| Toggle Markdown preview | Leader + p | Normal |
+
 ### Buffer mappings
 
 | Action               | Mapping    | Mode   |
