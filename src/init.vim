@@ -355,6 +355,32 @@ if !exists('*s:setupWrapping')
   endfunction
 endif
 
+function BuildDebugCppProject()
+  let l:fileExtension = expand("%:e")
+  if(l:fileExtension == "cpp")
+    echo "Creating debug folder"
+    silent exec "!mkdir -p debug"
+    echo "Building project in debug mode"
+    silent exec "!g++ -g % -o debug/%:t:r"
+    echo "Building finished"
+  else
+    echoerr "Try building your project from a .cpp file"
+  endif
+endfunction
+
+function BuildReleaseCppProjectForLinux()
+  let l:fileExtension = expand("%:e")
+  if(l:fileExtension == "cpp")
+    echo "Creating release folder"
+    silent exec "!mkdir -p release"
+    echo "Building project in release mode for Linux"
+    silent exec "!g++ % -o release/%:t:r"
+    echo "Building finished"
+  else
+    echoerr "Try building your project from a .cpp file"
+  endif
+endfunction
+
 "*****************************************************************************
 "" Autocmd Rules
 "*****************************************************************************
@@ -527,6 +553,9 @@ tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType h setlocal tabstop=4 shiftwidth=4 expandtab
+
+autocmd FileType cpp nnoremap <silent> <Leader>bd :call BuildDebugCppProject()<CR>
+autocmd FileType cpp nnoremap <silent> <Leader>bb :call BuildReleaseCppProjectForLinux()<CR>
 
 "" HTML
 "" for html files, 2 spaces
