@@ -329,6 +329,7 @@ let g:coc_global_extensions = [
 
 "" Ale
 let g:ale_disable_lsp = 1 "" Disable Ale LSP features already provided by coc.nvim such as auto-completion
+let g:ale_sign_column_always = 1
 
 "*****************************************************************************
 "" Commands
