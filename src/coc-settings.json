@@ -1,4 +1,13 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "cpp",
+    "html",
+    "typescript",
+    "typescriptreact",
+    "cs",
+    "markdown"
+  ],
   "diagnostic.displayByAle": true,
   "languageserver": {
     "ccls": {
