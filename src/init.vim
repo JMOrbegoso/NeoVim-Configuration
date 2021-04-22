@@ -439,9 +439,9 @@ noremap <C-a> ggVG<CR>
 nmap <silent> <Leader>en :ALENext<CR>
 nmap <silent> <Leader>ep :ALEPrevious<CR>
 
-"" Split
-noremap <Leader>h :<C-u>split<CR>
-noremap <Leader>v :<C-u>vsplit<CR>
+"" Open split windows
+noremap <silent> <Leader>sh :<C-u>split<CR>
+noremap <silent> <Leader>sv :<C-u>vsplit<CR>
 
 "" Switch splitted windows
 noremap <up> <C-w>k

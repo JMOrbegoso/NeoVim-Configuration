@@ -141,16 +141,18 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ### Splitted windows mappings
 
-| Action                                  | Mapping    | Mode              |
-| --------------------------------------- | ---------- | ----------------- |
-| Switch splitted window ↑                | ↑          | Normal and Visual |
-| Switch splitted window ←                | ←          | Normal and Visual |
-| Switch splitted window →                | →          | Normal and Visual |
-| Switch splitted window ↓                | ↓          | Normal and Visual |
-| Resize splitted window vertical up      | Leader + ↑ | Normal            |
-| Resize splitted window vertical down    | Leader + ↓ | Normal            |
-| Resize splitted window horizontal left  | Leader + ← | Normal            |
-| Resize splitted window horizontal right | Leader + → | Normal            |
+| Action                                  | Mapping        | Mode              |
+| --------------------------------------- | -------------- | ----------------- |
+| Open horizontal split window            | Leader + s + h | Normal            |
+| Open vertical split window              | Leader + s + v | Normal            |
+| Switch splitted window ↑                | ↑              | Normal and Visual |
+| Switch splitted window ←                | ←              | Normal and Visual |
+| Switch splitted window →                | →              | Normal and Visual |
+| Switch splitted window ↓                | ↓              | Normal and Visual |
+| Resize splitted window vertical up      | Leader + ↑     | Normal            |
+| Resize splitted window vertical down    | Leader + ↓     | Normal            |
+| Resize splitted window horizontal left  | Leader + ←     | Normal            |
+| Resize splitted window horizontal right | Leader + →     | Normal            |
 
 ### Code syntax mappings
 
