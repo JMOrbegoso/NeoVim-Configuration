@@ -479,7 +479,7 @@ nnoremap <Leader>sc :CloseSession<CR>
 noremap <silent> <Leader>t :enew<CR>
 
 "" Close current buffer
-noremap <silent> <Leader>c :bd<CR>
+noremap <silent> <Leader>w :bd<CR>
 
 "" Buffer navigation
 noremap <silent> <Leader><left> :bp<CR>

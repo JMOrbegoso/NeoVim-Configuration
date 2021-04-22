@@ -134,7 +134,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Action               | Mapping    | Mode   |
 | -------------------- | ---------- | ------ |
 | Open new buffer      | Leader + t | Normal |
-| Close current buffer | Leader + c | Normal |
+| Close current buffer | Leader + w | Normal |
 | Buffer navigation ←  | Leader + ← | Normal |
 | Buffer navigation →  | Leader + → | Normal |
 | Search open buffer   | Leader + b | Normal |
