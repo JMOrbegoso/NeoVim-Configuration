@@ -104,18 +104,20 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ### Basic write mappings
 
-| Action                           | Mapping    | Mode              |
-| -------------------------------- | ---------- | ----------------- |
-| Save current buffer              | Ctrl + s   | Normal            |
-| Save all open buffers            | Leader + s | Normal            |
-| Undo                             | Ctrl + z   | Normal            |
-| Redo                             | Ctrl + r   | Normal            |
-| Copy selection                   | y          | Visual            |
-| Copy the current line            | yy         | Visual            |
-| Cut selection                    | d          | Visual            |
-| Cut the current line             | dd         | Visual            |
-| Paste                            | p          | Normal and Visual |
-| Comment / Uncomment code portion | g + c      | Normal and Visual |
+| Action                            | Mapping    | Mode              |
+| --------------------------------- | ---------- | ----------------- |
+| Save current buffer               | Ctrl + s   | Normal            |
+| Save all open buffers             | Leader + s | Normal            |
+| Undo                              | Ctrl + z   | Normal            |
+| Redo                              | Ctrl + r   | Normal            |
+| Copy selection                    | y          | Visual            |
+| Copy the current line             | yy         | Visual            |
+| Cut selection                     | d          | Visual            |
+| Cut the current line              | dd         | Visual            |
+| Paste                             | p          | Normal and Visual |
+| Comment / Uncomment code portion  | g + c      | Normal and Visual |
+| Go to the beginning of the buffer | gg         | Normal            |
+| Go to the end of the buffer       | Shift + g  | Normal            |
 
 ### Markdown mappings
 
