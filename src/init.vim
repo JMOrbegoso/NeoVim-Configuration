@@ -38,6 +38,9 @@ Plug 'vim-scripts/CSApprox'
 "" Visual Themes
 Plug 'sonph/onehalf', {'rtp': 'vim'}
 
+"" Start Page
+Plug 'mhinz/vim-startify'
+
 "" Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -166,6 +169,22 @@ if exists('$SHELL')
 else
     set shell=/bin/sh
 endif
+
+"" Start Page
+let g:startify_bookmarks = [
+          \ { 'v': '~/.config/nvim/init.vim' },
+          \ { 'z': '~/.zshrc' },
+          \ { 'c': '~/.config/nvim/coc-settings.json' },
+          \ { 'o': '~/.omnisharp/omnisharp.json' },
+          \ ]
+
+let g:startify_lists = [
+          \ { 'type': 'bookmarks', 'header': ['   Bookmarks'] },
+          \ { 'type': 'files',     'header': ['   Most recently used files'] },
+          \ { 'type': 'dir',       'header': ['   Most recently used files from '. getcwd()] },
+          \ { 'type': 'sessions',  'header': ['   Sessions'] },
+          \ { 'type': 'commands',  'header': ['   Commands'] },
+          \ ]
 
 "" Session management
 let g:session_directory = "~/.config/nvim/session"
