@@ -118,6 +118,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Comment / Uncomment code portion  | g + c      | Normal and Visual |
 | Go to the beginning of the buffer | gg         | Normal            |
 | Go to the end of the buffer       | Shift + g  | Normal            |
+| Select all the buffer content     | Ctrl + a   | Normal            |
 
 ### Markdown mappings
 

@@ -407,6 +407,9 @@ nnoremap <C-s> :w<CR>
 "" Save all open buffers
 nnoremap <Leader>s :wa<CR>
 
+"" Select all the buffer content
+noremap <C-a> ggVG<CR>
+
 "" Split
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
