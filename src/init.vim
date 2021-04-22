@@ -403,6 +403,7 @@ vmap <C-z> <nop>
 
 "" Save current buffer
 nnoremap <C-s> :w<CR>
+imap <C-s> <Esc>:w<CR>a
 
 "" Save all open buffers
 nnoremap <Leader>s :wa<CR>

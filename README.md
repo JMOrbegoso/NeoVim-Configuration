@@ -106,7 +106,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 | Action                            | Mapping    | Mode              |
 | --------------------------------- | ---------- | ----------------- |
-| Save current buffer               | Ctrl + s   | Normal            |
+| Save current buffer               | Ctrl + s   | Normal and Visual |
 | Save all open buffers             | Leader + s | Normal            |
 | Undo                              | Ctrl + z   | Normal            |
 | Redo                              | Ctrl + r   | Normal            |
