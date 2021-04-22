@@ -482,8 +482,8 @@ noremap <silent> <Leader>t :enew<CR>
 noremap <silent> <Leader>c :bd<CR>
 
 "" Buffer navigation
-noremap <silent> <Leader>q :bp<CR>
-noremap <silent> <Leader>w :bn<CR>
+noremap <silent> <Leader><left> :bp<CR>
+noremap <silent> <Leader><right> :bn<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 
 "" Set working directory
