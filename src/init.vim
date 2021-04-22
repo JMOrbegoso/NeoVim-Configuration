@@ -413,6 +413,10 @@ nnoremap <Leader>s :wa<CR>
 "" Select all the buffer content
 noremap <C-a> ggVG<CR>
 
+"" Navigate between code errors with Ale
+nmap <silent> <Leader>en :ALENext<CR>
+nmap <silent> <Leader>ep :ALEPrevious<CR>
+
 "" Split
 noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
