@@ -449,11 +449,11 @@ noremap <down> <C-w>j
 noremap <left> <C-w>h
 noremap <right> <C-w>l
 
-"" Resize the split buffer
-nnoremap <silent> <Leader><right> :vertical resize +5<CR>
-nnoremap <silent> <Leader><left> :vertical resize -5<CR>
-nnoremap <silent> <Leader><up> :resize +5<CR>
-nnoremap <silent> <Leader><down> :resize -5<CR>
+"" Resize split buffers
+nnoremap <silent> <Leader>+ :vertical resize +3<CR>
+nnoremap <silent> <Leader>- :vertical resize -3<CR>
+nnoremap <silent> + :resize +3<CR>
+nnoremap <silent> - :resize -3<CR>
 
 "" Git
 noremap <Leader>gl :Git log<CR>

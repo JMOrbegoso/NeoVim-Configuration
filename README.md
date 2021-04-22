@@ -149,10 +149,10 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Switch splitted window ←                | ←              | Normal and Visual |
 | Switch splitted window →                | →              | Normal and Visual |
 | Switch splitted window ↓                | ↓              | Normal and Visual |
-| Resize splitted window vertical up      | Leader + ↑     | Normal            |
-| Resize splitted window vertical down    | Leader + ↓     | Normal            |
-| Resize splitted window horizontal left  | Leader + ←     | Normal            |
-| Resize splitted window horizontal right | Leader + →     | Normal            |
+| Resize splitted window vertical up      | Leader + +     | Normal            |
+| Resize splitted window vertical down    | Leader + -     | Normal            |
+| Resize splitted window horizontal left  | +              | Normal            |
+| Resize splitted window horizontal right | -              | Normal            |
 
 ### Code syntax mappings
 
