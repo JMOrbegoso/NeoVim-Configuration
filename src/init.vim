@@ -184,6 +184,8 @@ set number " Show row numbers
 set rnu " Show relative numbers on rows
 set numberwidth=1 " Size of row numbers
 
+set signcolumn=yes "Show always the sign column used by Ale or Gitgutter
+
 let no_buffers_menu=1
 
 set mouse=a " Enables the mouse usage
