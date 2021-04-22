@@ -413,6 +413,9 @@ set autoread
 "" Mappings
 "*****************************************************************************
 
+"" Open start page
+noremap <silent> <Leader><Home> :Startify<CR>
+
 "" Undo with <Ctrl + z> on Normal mode
 nmap <C-z> :undo<CR>
 

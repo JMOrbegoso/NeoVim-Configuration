@@ -98,6 +98,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 | Action              | Mapping        | Mode                |
 | ------------------- | -------------- | ------------------- |
+| Open start page     | Leader + Home  | Normal              |
 | Toggle terminal     | Leader + t + e | Normal and Terminal |
 | Close Terminal mode | ESC            | Terminal            |
 | Command history     | Leader + y     | Normal              |
