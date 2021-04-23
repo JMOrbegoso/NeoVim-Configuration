@@ -177,6 +177,7 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Go to type definition | Leader + c + t | Normal |
 | Go to implementation  | Leader + c + i | Normal |
 | Go to references      | Leader + c + r | Normal |
+| Rename symbol         | Leader + r + n | Normal |
 
 ### Git mappings
 

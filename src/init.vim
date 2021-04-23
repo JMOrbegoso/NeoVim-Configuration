@@ -546,6 +546,9 @@ nmap <silent> <Leader>ct <Plug>(coc-type-definition)
 nmap <silent> <Leader>ci <Plug>(coc-implementation)
 nmap <silent> <Leader>cr <Plug>(coc-references)
 
+"" Symbol renaming with coc.nvim
+nmap <Leader>rn <Plug>(coc-rename)
+
 "" Terminal emulation
 nnoremap <silent> <Leader>te :ToggleTerminal<CR>
 tnoremap <silent> <Leader>te <C-\><C-n>:ToggleTerminal<CR>
