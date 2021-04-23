@@ -118,7 +118,9 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Paste                             | p              | Normal and Visual |
 | Comment / Uncomment code portion  | g + c          | Normal and Visual |
 | Go to the beginning of the buffer | gg             | Normal            |
+| Go to the beginning of the buffer | Ctrl + Home    | Normal and Visual |
 | Go to the end of the buffer       | Shift + g      | Normal            |
+| Go to the end of the buffer       | Ctrl + End     | Normal and Visual |
 | Select all the buffer content     | Ctrl + a       | Normal            |
 | Go to the next error              | Leader + e + n | Normal            |
 | Go to the previous error          | Leader + e + p | Normal            |
