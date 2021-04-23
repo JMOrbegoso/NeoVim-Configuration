@@ -126,7 +126,8 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Copy the current line             | yy             | Visual            |
 | Cut selection                     | d              | Visual            |
 | Cut the current line              | dd             | Visual            |
-| Paste                             | p              | Normal and Visual |
+| Paste after the cursor position   | p              | Normal            |
+| Paste before the cursor position  | P              | Normal            |
 | Comment / Uncomment code portion  | g + c          | Normal and Visual |
 | Go to the beginning of the buffer | gg             | Normal            |
 | Go to the beginning of the buffer | Ctrl + Home    | Normal and Visual |
