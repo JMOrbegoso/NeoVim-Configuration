@@ -94,14 +94,25 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ## Mapping tables
 
+### Switch mode mappings
+
+| Action                                             | Mapping        | From mode           | Switch to |
+| -------------------------------------------------- | -------------- | ------------------- | --------- |
+| Switch mode before the current cursor position     | i              | Normal              | Insert    |
+| Switch mode after the current cursor position      | a              | Normal              | Insert    |
+| Switch mode at the beginning of the line           | I              | Normal              | Insert    |
+| Switch mode at the end of the line                 | A              | Normal              | Insert    |
+| Insert a new line below the cursor and switch mode | o              | Normal              | Insert    |
+| Insert a new line above the cursor and switch mode | O              | Normal              | Insert    |
+| Toggle terminal                                    | Leader + t + e | Normal and Terminal | Normal    |
+| Close Terminal mode                                | ESC            | Terminal            | Normal    |
+
 ### Basic mappings
 
-| Action              | Mapping        | Mode                |
-| ------------------- | -------------- | ------------------- |
-| Open start page     | Leader + Home  | Normal              |
-| Toggle terminal     | Leader + t + e | Normal and Terminal |
-| Close Terminal mode | ESC            | Terminal            |
-| Command history     | Leader + y     | Normal              |
+| Action          | Mapping       | Mode   |
+| --------------- | ------------- | ------ |
+| Open start page | Leader + Home | Normal |
+| Command history | Leader + y    | Normal |
 
 ### Basic write mappings
 
