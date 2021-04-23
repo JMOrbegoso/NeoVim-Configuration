@@ -116,26 +116,24 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ### Basic write mappings
 
-| Action                            | Mapping        | Mode              |
-| --------------------------------- | -------------- | ----------------- |
-| Save current buffer               | Ctrl + s       | Normal and Visual |
-| Save all open buffers             | Leader + s     | Normal            |
-| Undo                              | Ctrl + z       | Normal            |
-| Redo                              | Ctrl + r       | Normal            |
-| Copy selection                    | y              | Visual            |
-| Copy the current line             | yy             | Visual            |
-| Cut selection                     | d              | Visual            |
-| Cut the current line              | dd             | Visual            |
-| Paste after the cursor position   | p              | Normal            |
-| Paste before the cursor position  | P              | Normal            |
-| Comment / Uncomment code portion  | g + c          | Normal and Visual |
-| Go to the beginning of the buffer | gg             | Normal            |
-| Go to the beginning of the buffer | Ctrl + Home    | Normal and Visual |
-| Go to the end of the buffer       | Shift + g      | Normal            |
-| Go to the end of the buffer       | Ctrl + End     | Normal and Visual |
-| Select all the buffer content     | Ctrl + a       | Normal            |
-| Go to the next error              | Leader + e + n | Normal            |
-| Go to the previous error          | Leader + e + p | Normal            |
+| Action                            | Mapping     | Mode              |
+| --------------------------------- | ----------- | ----------------- |
+| Save current buffer               | Ctrl + s    | Normal and Visual |
+| Save all open buffers             | Leader + s  | Normal            |
+| Undo                              | Ctrl + z    | Normal            |
+| Redo                              | Ctrl + r    | Normal            |
+| Copy selection                    | y           | Visual            |
+| Copy the current line             | yy          | Visual            |
+| Cut selection                     | d           | Visual            |
+| Cut the current line              | dd          | Visual            |
+| Paste after the cursor position   | p           | Normal            |
+| Paste before the cursor position  | P           | Normal            |
+| Comment / Uncomment code portion  | g + c       | Normal and Visual |
+| Go to the beginning of the buffer | gg          | Normal            |
+| Go to the beginning of the buffer | Ctrl + Home | Normal and Visual |
+| Go to the end of the buffer       | Shift + g   | Normal            |
+| Go to the end of the buffer       | Ctrl + End  | Normal and Visual |
+| Select all the buffer content     | Ctrl + a    | Normal            |
 
 ### Markdown mappings
 
@@ -170,14 +168,16 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ### Code syntax mappings
 
-| Action                | Mapping        | Mode   |
-| --------------------- | -------------- | ------ |
-| Format current buffer | Leader + f     | Normal |
-| Go to definition      | Leader + c + d | Normal |
-| Go to type definition | Leader + c + t | Normal |
-| Go to implementation  | Leader + c + i | Normal |
-| Go to references      | Leader + c + r | Normal |
-| Rename symbol         | Leader + r + n | Normal |
+| Action                   | Mapping        | Mode   |
+| ------------------------ | -------------- | ------ |
+| Format current buffer    | Leader + f     | Normal |
+| Go to definition         | Leader + c + d | Normal |
+| Go to type definition    | Leader + c + t | Normal |
+| Go to implementation     | Leader + c + i | Normal |
+| Go to references         | Leader + c + r | Normal |
+| Go to the next error     | Leader + e + n | Normal |
+| Go to the previous error | Leader + e + p | Normal |
+| Rename symbol            | Leader + r + n | Normal |
 
 ### Git mappings
 
