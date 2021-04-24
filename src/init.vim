@@ -76,7 +76,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'Raimondi/delimitMate'
 Plug 'RRethy/vim-illuminate'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdcommenter'
 
 "" Code completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -495,6 +495,10 @@ nnoremap <silent> <Leader>e :FZF -m<CR>
 
 "" Recovery commands from history through FZF
 nmap <Leader>y :History:<CR>
+
+"" Nerdcommenter
+let g:NERDCreateDefaultMappings = 0
+map <Leader>cc <Plug>NERDCommenterToggle
 
 "" Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
