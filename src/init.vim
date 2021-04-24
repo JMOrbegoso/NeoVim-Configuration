@@ -107,6 +107,7 @@ Plug 'mattn/emmet-vim'
 "" TypeScript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 "" C#
 Plug 'OmniSharp/omnisharp-vim'
@@ -571,6 +572,9 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 
 "" TypeScript
 let g:yats_host_keyword = 1
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+hi tsxComponentName guifg=#56B6C2
+hi tsxCloseComponentName guifg=#56B6C2
 
 "" C#
 let g:OmniSharp_selector_ui = 'fzf'
