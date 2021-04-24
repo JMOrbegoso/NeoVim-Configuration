@@ -9,6 +9,8 @@
     "markdown"
   ],
   "diagnostic.displayByAle": true,
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": true,
   "languageserver": {
     "ccls": {
       "command": "ccls",
