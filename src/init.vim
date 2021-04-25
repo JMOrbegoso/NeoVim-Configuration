@@ -552,9 +552,7 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 
 "" Set working directory
 nnoremap <Leader>. :lcd %:p:h<CR>
-
 cnoremap <C-p> <C-r>=expand("%:p:h") . "/" <CR>
-nnoremap <silent> <Leader>e :FZF -m<CR>
 
 "" Recovery commands from history through FZF
 nmap <Leader>y :History:<CR>
@@ -566,6 +564,9 @@ map <Leader>cc <Plug>NERDCommenterToggle
 "" NERDTree
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
+
+"" FZF
+nnoremap <silent> <Leader>fz :FZF -m<CR>
 
 "" Snippets
 let g:UltiSnipsExpandTrigger="<tab>"

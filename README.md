@@ -198,8 +198,8 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ### File mappings
 
-| Action                            | Mapping    | Mode   |
-| --------------------------------- | ---------- | ------ |
-| Open NERDTree in splitted windows | F2         | Normal |
-| Toggle NERDTree                   | F3         | Normal |
-| Find files on the same folder     | Leader + e | Normal |
+| Action                            | Mapping        | Mode   |
+| --------------------------------- | -------------- | ------ |
+| Open NERDTree in splitted windows | F2             | Normal |
+| Toggle NERDTree                   | F3             | Normal |
+| Find files on the directory       | Leader + f + z | Normal |
