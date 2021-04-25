@@ -442,6 +442,55 @@ if !exists('*s:setupWrapping')
   endfunction
 endif
 
+function CreateFolder(folder_name)
+  echo "Creating folder"
+  exec "!mkdir -p " . a:folder_name
+endfunction
+
+function DeleteFileIfExist(file_path)
+  echo "Deleting file if exist"
+  exec "!rm -f " . a:file_path
+endfunction
+
+function BuildDebugCppProject()
+  let l:working_directory_fullpath = expand('%:p:h')
+  let l:debug_directory = l:working_directory_fullpath . '/debug'
+  let l:debug_file = l:debug_directory . '/main'
+
+  call CreateFolder(l:debug_directory)
+  call DeleteFileIfExist(l:debug_file)
+
+  echo "Building project in debug mode"
+  exec "!g++ -g main.cpp -o " . l:debug_file
+  echo "Building finished"
+endfunction
+
+function BuildReleaseCppProjectForLinux()
+  let l:working_directory_fullpath = expand('%:p:h')
+  let l:release_directory = l:working_directory_fullpath . '/release'
+  let l:release_file = l:release_directory . '/main'
+
+  call CreateFolder(l:release_directory)
+  call DeleteFileIfExist(l:release_file)
+
+  echo "Building project in release mode for Linux"
+  exec "!g++ main.cpp -o " . l:release_file
+  echo "Building finished"
+endfunction
+
+function BuildReleaseCppProjectForWindows()
+  let l:working_directory_fullpath = expand('%:p:h')
+  let l:release_directory = l:working_directory_fullpath . '/release'
+  let l:release_file = l:release_directory . '/main.exe'
+
+  call CreateFolder(l:release_directory)
+  call DeleteFileIfExist(l:release_file)
+
+  echo "Building project in release mode for Windows"
+  exec "!x86_64-w64-mingw32-g++ -static-libgcc -static-libstdc++ main.cpp -o " . l:release_file
+  echo "Building finished"
+endfunction
+
 "*****************************************************************************
 "" Autocmd Rules
 "*****************************************************************************
@@ -636,6 +685,10 @@ tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType h setlocal tabstop=4 shiftwidth=4 expandtab
+
+autocmd FileType cpp nnoremap <silent> <Leader>bd :call BuildDebugCppProject()<CR>
+autocmd FileType cpp nnoremap <silent> <Leader>bb :call BuildReleaseCppProjectForLinux()<CR>
+autocmd FileType cpp nnoremap <silent> <Leader>bw :call BuildReleaseCppProjectForWindows()<CR>
 
 "" HTML
 "" for html files, 2 spaces

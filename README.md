@@ -204,3 +204,11 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Toggle NERDTree                   | F3             | Normal |
 | Find files on the directory       | Leader + f + z | Normal |
 | Set working directory             | Leader + .     | Normal |
+
+### Build mappings
+
+| FileType | Action                            | Mapping        | Mode   |
+| -------- | --------------------------------- | -------------- | ------ |
+| cpp, h   | Build in debug mode               | Leader + b + d | Normal |
+| cpp, h   | Build in release mode             | Leader + b + b | Normal |
+| cpp, h   | Build in release mode for Windows | Leader + b + w | Normal |
