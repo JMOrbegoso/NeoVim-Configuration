@@ -36,7 +36,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/CSApprox'
 
 "" Visual Themes
-Plug 'sonph/onehalf', {'rtp': 'vim'}
+Plug 'morhetz/gruvbox'
 
 "" Start Page
 Plug 'mhinz/vim-startify'
@@ -268,13 +268,13 @@ let g:light_theme = 1
 
 if (g:light_theme)
   set background=light
-  colorscheme onehalflight
-  let g:airline_theme = 'onehalflight'
+  let g:gruvbox_contrast_light='hard'
+  colorscheme gruvbox
   let g:lsp_cxx_hl_light_bg = 1
 else
   set background=dark
-  colorscheme onehalfdark
-  let g:airline_theme = 'onehalfdark'
+  let g:gruvbox_contrast_dark='hard'
+  colorscheme gruvbox
   let g:lsp_cxx_hl_light_bg = 0
 endif
 
