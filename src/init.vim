@@ -552,7 +552,6 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 
 "" Set working directory
 nnoremap <Leader>. :lcd %:p:h<CR>
-cnoremap <C-p> <C-r>=expand("%:p:h") . "/" <CR>
 
 "" Recovery commands from history through FZF
 nmap <Leader>y :History:<CR>
