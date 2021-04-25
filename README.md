@@ -203,3 +203,4 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 | Open NERDTree in splitted windows | F2             | Normal |
 | Toggle NERDTree                   | F3             | Normal |
 | Find files on the directory       | Leader + f + z | Normal |
+| Set working directory             | Leader + .     | Normal |
