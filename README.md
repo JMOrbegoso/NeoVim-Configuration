@@ -96,16 +96,17 @@ OmniSharp by default do not sort the usings in a cs file, you can change this by
 
 ### Switch mode mappings
 
-| Action                                             | Mapping        | From mode           | Switch to |
-| -------------------------------------------------- | -------------- | ------------------- | --------- |
-| Switch mode before the current cursor position     | i              | Normal              | Insert    |
-| Switch mode after the current cursor position      | a              | Normal              | Insert    |
-| Switch mode at the beginning of the line           | I              | Normal              | Insert    |
-| Switch mode at the end of the line                 | A              | Normal              | Insert    |
-| Insert a new line below the cursor and switch mode | o              | Normal              | Insert    |
-| Insert a new line above the cursor and switch mode | O              | Normal              | Insert    |
-| Toggle terminal                                    | Leader + t + e | Normal and Terminal | Normal    |
-| Close Terminal mode                                | ESC            | Terminal            | Normal    |
+| Action                             | Mapping        | From     | To       |
+| ---------------------------------- | -------------- | -------- | -------- |
+| Before the current cursor position | i              | Normal   | Insert   |
+| After the current cursor position  | a              | Normal   | Insert   |
+| Beginning of the line              | I              | Normal   | Insert   |
+| End of the line                    | A              | Normal   | Insert   |
+| New line below the cursor          | o              | Normal   | Insert   |
+| New line above the cursor          | O              | Normal   | Insert   |
+| Toggle terminal                    | Leader + t + e | Normal   | Terminal |
+| Toggle terminal                    | Leader + t + e | Terminal | Normal   |
+| Close Terminal mode                | ESC            | Terminal | Normal   |
 
 ### Basic mappings
 
