@@ -4,7 +4,8 @@ Configuration and templates for NeoVim.
 
 ## Requirements
 
-For the shared clipboard it is necessary to have **xclip** installed on the GNU/Linux system:
+For the shared clipboard it is necessary to have **xclip** installed
+on the GNU/Linux system:
 
 Arch based distros:
 
@@ -20,7 +21,9 @@ sudo apt install xclip
 
 ## Language Servers for code completion
 
-Language servers of Json, HTML, TypeScript and C# are installed on the first **:PlugInstall**, but for C/C++ code completion require **ccls** installed on the system first:
+Language servers of Json, HTML, TypeScript and C# are installed
+on the first **:PlugInstall**, but for C/C++ code completion require **ccls**
+installed on the system first:
 
 Arch based distros:
 
@@ -34,11 +37,14 @@ Debian based distros:
 sudo apt install ccls
 ```
 
-Also is necesary to copy the file coc-settings.json to the folder ~/.config/nvim, or copy its content to the file opened by Nvim when we use the command: **:CocConfig**.
+Also is necesary to copy the file coc-settings.json to the folder
+~/.config/nvim, or copy its content to the file opened by Nvim
+when we use the command: **:CocConfig**.
 
 ## Visual Theme
 
-The theme One Half is installed in its dark and light modes, to switch between them just change the value of the variable:
+The theme One Half is installed in its dark and light modes,
+to switch between them just change the value of the variable:
 
 Dark theme:
 
@@ -54,7 +60,9 @@ g:light_theme = 1
 
 ## Templates
 
-Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates, remember that each skeleton file name must follow the next pattern taken from vim-skeletons documentation:
+Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates,
+remember that each skeleton file name must follow the next pattern taken
+from vim-skeletons documentation:
 
 `skeleton-name.<extra>.<filetype>`, for example:
 
@@ -78,11 +86,15 @@ Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates
 
 ### NERDTree file icons
 
-In order to see the icons in the NERDTree file system explorer, the console needs to use a [Nerd font](https://github.com/ryanoasis/nerd-fonts#patched-fonts).
+In order to see the icons in the NERDTree file system explorer,
+the console needs to use a
+[Nerd font](https://github.com/ryanoasis/nerd-fonts#patched-fonts).
 
 ### Sort usings with OmniSharp
 
-OmniSharp by default do not sort the usings in a cs file, you can change this by specifying it in the OmniSharp configuration file located on ~/.omnisharp/omnisharp.json adding the next values:
+OmniSharp by default do not sort the usings in a cs file,
+you can change this by specifying it in the OmniSharp configuration file
+located on ~/.omnisharp/omnisharp.json adding the next values:
 
 ```json
 {
