@@ -7,13 +7,13 @@ Configuration and templates for NeoVim.
 For the shared clipboard it is necessary to have **xclip** installed
 on the GNU/Linux system:
 
-Arch based distros:
+**Arch based distros:**
 
 ```bash
 sudo pacman -S xclip
 ```
 
-Debian based distros:
+**Debian based distros:**
 
 ```bash
 sudo apt install xclip
@@ -25,13 +25,13 @@ Language servers of Json, HTML, TypeScript and C# are installed
 on the first **:PlugInstall**, but for C/C++ code completion require **ccls**
 installed on the system first:
 
-Arch based distros:
+**Arch based distros:**
 
 ```bash
 sudo pacman -S ccls
 ```
 
-Debian based distros:
+**Debian based distros:**
 
 ```bash
 sudo apt install ccls
@@ -45,13 +45,13 @@ when we use the command: **:CocConfig**.
 
 To switch between dark and light themes just change the value of the variable:
 
-Dark theme:
+**Dark theme:**
 
 ```vim-script
 g:light_theme = 0
 ```
 
-Light theme:
+**Light theme:**
 
 ```vim-script
 g:light_theme = 1
