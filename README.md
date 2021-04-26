@@ -43,8 +43,7 @@ when we use the command: **:CocConfig**.
 
 ## Visual Theme
 
-The theme One Half is installed in its dark and light modes,
-to switch between them just change the value of the variable:
+To switch between dark and light themes just change the value of the variable:
 
 Dark theme:
 
