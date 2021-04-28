@@ -81,6 +81,48 @@ from vim-skeletons documentation:
 | C#       | cs             | Class         |
 | C#       | cs             | Default       |
 
+## Debug
+
+The plugin Vimspector is used to graphical debug,
+to use it,
+after open NeoVim and install all the plugins,
+use the following command to install the debugging
+requirements in the available languages:
+
+```vim-script
+:VimspectorInstall
+```
+
+### Vimspector parameters file
+
+The Vimspector plugin require a parameters file to debug a project,
+just create a **.vimspector.json** file using the available templates
+for that and customize it according the project properties.
+
+### C++ debug requirements
+
+Before debug any C++ project, first install **gdb**:
+
+Arch based distros:
+
+```bash
+sudo pacman -S gdb
+```
+
+Debian based distros:
+
+```bash
+sudo apt install gdb
+```
+
+### Update the debug gadgets
+
+To update the gadgets to the latest supported versions you can use the command:
+
+```vim-script
+:VimspectorUpdate
+```
+
 ## Extra
 
 ### NERDTree file icons
@@ -224,3 +266,15 @@ located on ~/.omnisharp/omnisharp.json adding the next values:
 | cpp, h   | Build in debug mode               | Leader + b + d | Normal |
 | cpp, h   | Build in release mode             | Leader + b + b | Normal |
 | cpp, h   | Build in release mode for Windows | Leader + b + w | Normal |
+
+### Debug Mappings
+
+| Action                             | Mapping        | Mode   |
+| ---------------------------------- | -------------- | ------ |
+| Start debugging                    | Leader + d + d | Normal |
+| Close debugger                     | Leader + d + x | Normal |
+| Toggle debug breakpoint            | Leader + d + b | Normal |
+| Clear breakpoints                  | Leader + d + c | Normal |
+| Go to the next breakpoint          | Leader + d + n | Normal |
+| Go to the next step                | Leader + d + i | Normal |
+| Step out of current function scope | Leader + d + o | Normal |

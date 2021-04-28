@@ -90,6 +90,9 @@ Plug 'pgilad/vim-skeletons'
 "" Terminal
 Plug 'caenrique/nvim-toggle-terminal'
 
+"" Graphical debugger
+Plug 'puremourning/vimspector'
+
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
@@ -413,6 +416,13 @@ let g:coc_global_extensions = [
   \'coc-markdownlint',
   \]
 
+"" Vimspector
+let g:vimspector_install_gadgets = [
+  \'vscode-cpptools',
+  \'vscode-node-debug2',
+  \'netcoredbg',
+  \]
+
 "" Ale
 let g:ale_disable_lsp = 1 "" Disable Ale LSP features already provided by coc.nvim such as auto-completion
 let g:ale_sign_column_always = 1
@@ -455,7 +465,7 @@ endfunction
 function BuildDebugCppProject()
   let l:working_directory_fullpath = expand('%:p:h')
   let l:debug_directory = l:working_directory_fullpath . '/debug'
-  let l:debug_file = l:debug_directory . '/main'
+  let l:debug_file = l:debug_directory . '/main.out'
 
   call CreateFolder(l:debug_directory)
   call DeleteFileIfExist(l:debug_file)
@@ -676,6 +686,17 @@ tnoremap <silent> <Leader>te <C-\><C-n>:ToggleTerminal<CR>
 
 "" ESC to close the terminal mode
 tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
+
+"" Vimspector
+nmap <silent> <Leader>dd :call vimspector#Launch()<CR>
+nmap <silent> <Leader>dx :call vimspector#Reset()<CR>
+
+nmap <silent> <Leader>db :call vimspector#ToggleBreakpoint()<CR>
+nmap <silent> <Leader>dc :call vimspector#ClearBreakpoints()<CR>
+
+nmap <silent> <Leader>dn :call vimspector#StepOver()<CR>
+nmap <silent> <Leader>di :call vimspector#StepInto()<CR>
+nmap <silent> <Leader>do :call vimspector#StepOut()<CR>
 
 "*****************************************************************************
 "" Custom configs
