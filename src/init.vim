@@ -427,6 +427,9 @@ let g:vimspector_install_gadgets = [
 let g:ale_disable_lsp = 1 "" Disable Ale LSP features already provided by coc.nvim such as auto-completion
 let g:ale_sign_column_always = 1
 
+"" Emmet
+let g:user_emmet_install_global = 0
+
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
@@ -714,6 +717,7 @@ autocmd FileType cpp nnoremap <silent> <Leader>bw :call BuildReleaseCppProjectFo
 "" HTML
 "" for html files, 2 spaces
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd FileType html,css EmmetInstall
 
 "" TypeScript
 let g:yats_host_keyword = 1
