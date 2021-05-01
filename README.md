@@ -174,8 +174,8 @@ located on ~/.omnisharp/omnisharp.json adding the next values:
 | --------------------------------- | -------------- | ----------------- |
 | Save current buffer               | Ctrl + s       | Normal and Visual |
 | Save all open buffers             | Leader + s     | Normal            |
-| Undo                              | Ctrl + z       | Normal            |
-| Redo                              | Ctrl + r       | Normal            |
+| Undo                              | Ctrl + z       | Normal and Insert |
+| Redo                              | Ctrl + y       | Normal and Insert |
 | Copy selection                    | y              | Visual            |
 | Copy the current line             | yy             | Visual            |
 | Cut selection                     | d              | Visual            |

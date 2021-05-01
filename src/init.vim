@@ -542,11 +542,17 @@ set autoread
 "" Open start page
 noremap <silent> <Leader><Home> :Startify<CR>
 
-"" Undo with <Ctrl + z> on Normal mode
+"" Undo
 nmap <C-z> :undo<CR>
+imap <C-z> <Esc>:undo<CR>a
 
-"" Disable undo with "u"
-noremap u <nop>
+"" Redo
+nmap <C-y> :redo<CR>
+imap <C-y> <Esc>:redo<CR>a
+
+"" Disable vim's default undo and redo
+map u <nop>
+map <C-r> <nop>
 
 "" Disable process suspension on Visual mode
 vmap <C-z> <nop>
