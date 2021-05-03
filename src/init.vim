@@ -721,6 +721,8 @@ autocmd FileType cpp nnoremap <silent> <Leader>bd :call BuildDebugCppProject()<C
 autocmd FileType cpp nnoremap <silent> <Leader>bb :call BuildReleaseCppProjectForLinux()<CR>
 autocmd FileType cpp nnoremap <silent> <Leader>bw :call BuildReleaseCppProjectForWindows()<CR>
 
+autocmd FileType cpp nnoremap <silent> <Leader>dd :call BuildDebugCppProject()<CR> <bar> :call vimspector#Launch()<CR>
+
 "" HTML
 "" for html files, 2 spaces
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
