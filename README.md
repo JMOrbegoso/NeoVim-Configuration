@@ -272,9 +272,10 @@ located on ~/.omnisharp/omnisharp.json adding the next values:
 | Action                             | Mapping        | Mode   |
 | ---------------------------------- | -------------- | ------ |
 | Start debugging                    | Leader + d + d | Normal |
+| Continue debugging                 | Leader + d + c | Normal |
 | Close debugger                     | Leader + d + x | Normal |
 | Toggle debug breakpoint            | Leader + d + b | Normal |
-| Clear breakpoints                  | Leader + d + c | Normal |
+| Clear breakpoints                  | Leader + d + v | Normal |
 | Go to the next breakpoint          | Leader + d + n | Normal |
 | Go to the next step                | Leader + d + i | Normal |
 | Step out of current function scope | Leader + d + o | Normal |

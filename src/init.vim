@@ -698,10 +698,11 @@ tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 
 "" Vimspector
 nmap <silent> <Leader>dd :call vimspector#Launch()<CR>
+nmap <silent> <Leader>dc :call vimspector#Continue()<CR>
 nmap <silent> <Leader>dx :call vimspector#Reset()<CR>
 
 nmap <silent> <Leader>db :call vimspector#ToggleBreakpoint()<CR>
-nmap <silent> <Leader>dc :call vimspector#ClearBreakpoints()<CR>
+nmap <silent> <Leader>dv :call vimspector#ClearBreakpoints()<CR>
 
 nmap <silent> <Leader>dn :call vimspector#StepOver()<CR>
 nmap <silent> <Leader>di :call vimspector#StepInto()<CR>
