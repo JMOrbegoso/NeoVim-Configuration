@@ -99,6 +99,12 @@ The Vimspector plugin require a parameters file to debug a project,
 just create a **.vimspector.json** file using the available templates
 for that and customize it according the project properties.
 
+#### Default C++ .vimspector.json file
+
+In the case of C++ projects, you can use a default vimspector.json file,
+to use it, just copy the file `src/vimspector/vimspector.cpp.json` to
+`~/.config/nvim/plugged/vimspector/configurations/linux/cpp/`.
+
 ### C++ debug requirements
 
 Before debug any C++ project, first install **gdb**:

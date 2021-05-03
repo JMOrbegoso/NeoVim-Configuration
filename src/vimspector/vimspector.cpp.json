@@ -1,0 +1,20 @@
+{
+  "configurations": {
+    "Launch": {
+      "adapter": "vscode-cpptools",
+      "breakpoints": {
+        "exceptions": {
+          "all": "N",
+          "uncaught": "N"
+        }
+      },
+      "configuration": {
+        "request": "launch",
+        "program": "${fileDirname}/debug/main.out",
+        "cwd": "${fileDirname}",
+        "externalConsole": true,
+        "MIMode": "gdb"
+      }
+    }
+  }
+}
