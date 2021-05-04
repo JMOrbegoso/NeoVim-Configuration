@@ -255,6 +255,7 @@ located on ~/.omnisharp/omnisharp.json adding the next values:
 | Git branch                         | Leader + g + b | Normal |
 | Git checkout                       | Leader + g + k | Normal |
 | Git undo last commit to stage area | Leader + g + u | Normal |
+| Open current line in GitHub        | Leader + g + g | Normal |
 
 ### File mappings
 

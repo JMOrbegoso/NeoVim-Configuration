@@ -603,6 +603,7 @@ noremap <Leader>go :Git push origin
 noremap <Leader>gb :Git branch 
 noremap <Leader>gk :Git checkout 
 noremap <Leader>gu :Git reset --soft HEAD^1<CR>
+noremap <Leader>gg :.Gbrowse<CR>
 
 "" Session management
 nnoremap <Leader>so :OpenSession<Space>
@@ -675,9 +676,6 @@ vmap > >gv
 "" Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-
-"" Open current line on GitHub
-nnoremap <Leader>o :.Gbrowse<CR>
 
 "" Format code with CoC.Vim
 xmap <silent> <Leader>f <Plug>(coc-format)
