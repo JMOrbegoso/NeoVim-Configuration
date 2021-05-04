@@ -595,7 +595,7 @@ noremap <Leader>gl :Git log<CR>
 noremap <Leader>gs :Git status<CR>
 noremap <Leader>gd :Git diff<CR>
 noremap <Leader>gf :Gvdiffsplit<CR>
-noremap <Leader>gw :Gwrite<CR>
+noremap <Leader>gw :Git add %<CR>
 noremap <Leader>ga :Git add .<CR>
 noremap <Leader>gr :Git reset<CR>
 noremap <Leader>gc :Git commit<CR>

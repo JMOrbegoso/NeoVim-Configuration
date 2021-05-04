@@ -241,22 +241,22 @@ located on ~/.omnisharp/omnisharp.json adding the next values:
 
 ### Git mappings
 
-| Action                             | Mapping        | Mode   |
-| ---------------------------------- | -------------- | ------ |
-| Git log                            | Leader + g + l | Normal |
-| Git status                         | Leader + g + s | Normal |
-| Git diff                           | Leader + g + d | Normal |
-| Open Git diff of current buffer    | Leader + g + f | Normal |
-| Git add current file               | Leader + g + w | Normal |
-| Git add all files                  | Leader + g + a | Normal |
-| Git reset                          | Leader + g + r | Normal |
-| Git commit                         | Leader + g + c | Normal |
-| Git pull                           | Leader + g + p | Normal |
-| Git push origin                    | Leader + g + o | Normal |
-| Git branch                         | Leader + g + b | Normal |
-| Git checkout                       | Leader + g + k | Normal |
-| Git undo last commit to stage area | Leader + g + u | Normal |
-| Open current line in GitHub        | Leader + g + g | Normal |
+| Action                                  | Mapping        | Mode   |
+| --------------------------------------- | -------------- | ------ |
+| Git log                                 | Leader + g + l | Normal |
+| Git status                              | Leader + g + s | Normal |
+| Git diff                                | Leader + g + d | Normal |
+| Open Git diff of current buffer         | Leader + g + f | Normal |
+| Git add current buffer                  | Leader + g + w | Normal |
+| Git add all changes on repository files | Leader + g + a | Normal |
+| Git reset                               | Leader + g + r | Normal |
+| Git commit                              | Leader + g + c | Normal |
+| Git pull                                | Leader + g + p | Normal |
+| Git push origin                         | Leader + g + o | Normal |
+| Git branch                              | Leader + g + b | Normal |
+| Git checkout                            | Leader + g + k | Normal |
+| Git undo last commit to stage area      | Leader + g + u | Normal |
+| Open current line in GitHub             | Leader + g + g | Normal |
 
 ### File mappings
 
