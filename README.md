@@ -246,6 +246,7 @@ located on ~/.omnisharp/omnisharp.json adding the next values:
 | Git log                            | Leader + g + l | Normal |
 | Git status                         | Leader + g + s | Normal |
 | Git diff                           | Leader + g + d | Normal |
+| Open Git diff of current buffer    | Leader + g + f | Normal |
 | Git add current file               | Leader + g + w | Normal |
 | Git add all files                  | Leader + g + a | Normal |
 | Git reset                          | Leader + g + r | Normal |
