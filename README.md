@@ -56,8 +56,12 @@ sudo apt install ccls
 ```
 
 Also is necesary to copy the file coc-settings.json to the folder
-~/.config/nvim, or copy its content to the file opened by Nvim
-when we use the command: **:CocConfig**.
+`~/.config/nvim`, or copy its content to the file opened by Nvim
+when we use the command:
+
+```vim-script
+:CocConfig
+```
 
 ## Visual Theme
 
@@ -77,7 +81,7 @@ g:light_theme = 1
 
 ## Templates
 
-Copy the folder **templates** to the folder ~/.config/nvim/ to use the templates,
+Copy the folder **templates** to the folder `~/.config/nvim/` to use the templates,
 remember that each skeleton file name must follow the next pattern taken
 from vim-skeletons documentation:
 
@@ -153,7 +157,7 @@ To update the gadgets to the latest supported versions you can use the command:
 
 OmniSharp by default do not sort the usings in a cs file,
 you can change this by specifying it in the OmniSharp configuration file
-located on ~/.omnisharp/omnisharp.json adding the next values:
+located on `~/.omnisharp/omnisharp.json` adding the next values:
 
 ```json
 {
