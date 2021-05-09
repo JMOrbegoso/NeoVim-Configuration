@@ -19,6 +19,24 @@ sudo pacman -S xclip
 sudo apt install xclip
 ```
 
+## Font
+
+To use the icons in the NERDTree file system explorer and others,
+the terminal emulator must use a Nerd Font.
+
+You can download a NerdFont from:
+[https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads).
+
+To install it on a Linux system you must copy the unzipped font folder
+to the folder `usr/share/fonts/` and refresh the fonts cache with the command:
+
+```bash
+ fc-cache -f -v.
+```
+
+After that, you just need to set that nerd font in the settings of the terminal emulator
+you are using, like xfce-terminal, Konsole, etc.
+
 ## Language Servers for code completion
 
 Language servers of Json, HTML, TypeScript and C# are installed
@@ -130,12 +148,6 @@ To update the gadgets to the latest supported versions you can use the command:
 ```
 
 ## Extra
-
-### NERDTree file icons
-
-In order to see the icons in the NERDTree file system explorer,
-the console needs to use a
-[Nerd font](https://github.com/ryanoasis/nerd-fonts#patched-fonts).
 
 ### Sort usings with OmniSharp
 
