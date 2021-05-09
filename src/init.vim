@@ -406,7 +406,7 @@ if executable('rg')
   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 endif
 
-"" Coc.nvim extensions
+"" coc.nvim extensions
 let g:coc_global_extensions = [
   \'coc-vimlsp',
   \'coc-json',
@@ -678,11 +678,11 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-"" Format code with CoC.Vim
+"" Format code with coc.nvim
 xmap <silent> <Leader>f <Plug>(coc-format)
 nmap <silent> <Leader>f <Plug>(coc-format)
 
-"" Code navigation with Coc.Vim
+"" Code navigation with coc.nvim
 nmap <silent> <Leader>cd <Plug>(coc-definition)
 nmap <silent> <Leader>ct <Plug>(coc-type-definition)
 nmap <silent> <Leader>ci <Plug>(coc-implementation)
