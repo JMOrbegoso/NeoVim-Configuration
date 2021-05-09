@@ -328,8 +328,8 @@ else
   let g:airline_symbols.dirty='⚡'
   let g:airline#extensions#tabline#left_sep = ''
   let g:airline#extensions#tabline#left_alt_sep = ''
-  let airline#extensions#ale#error_symbol = '❌:'
-  let airline#extensions#ale#warning_symbol = '⚠:'
+  let airline#extensions#ale#error_symbol = ':' "nf-fa-times
+  let airline#extensions#ale#warning_symbol = ':' "nf-fa-exclamation
   endif
 
 "call airline#parts#define_accent('ale_error_count', 'yellow') "Disabled due Vim-Airline bug
