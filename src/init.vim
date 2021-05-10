@@ -433,6 +433,11 @@ let g:ale_sign_column_always = 1
 "" Emmet
 let g:user_emmet_install_global = 0
 
+"" Markdown preview
+let g:mkdp_auto_start = 0
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+
 "*****************************************************************************
 "" Commands
 "*****************************************************************************

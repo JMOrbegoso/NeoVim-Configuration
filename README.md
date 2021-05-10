@@ -151,6 +151,60 @@ To update the gadgets to the latest supported versions you can use the command:
 :VimspectorUpdate
 ```
 
+## Markdown preview
+
+### Installation
+
+To install the Markdown previewer plugin you need
+to have installed
+[Node](https://nodejs.org/en/)
+and
+[Yarn](https://yarnpkg.com/getting-started/install#about-global-installs).
+
+To install `Node` you can use the next command in your terminal emulator:
+
+```bash
+sudo pacman -S nodejs
+sudo pacman -S npm
+```
+
+After that, you can globally install `Yarn` with the next command:
+
+```bash
+sudo npm install -g yarn
+```
+
+### Automatically start Markdown preview
+
+By default, you need to launch the Markdown preview plugin to see
+the Markdown preview in the browser,
+but if you want to automatically open the preview window after entering
+the Markdown buffer, you need to update the next variable:
+
+```vim-script
+let g:mkdp_auto_start = 1
+```
+
+### Custom Markdown styles
+
+You can use a custom Markdown style to preview the Markdown, to do
+that, you need to change the value of this variable,
+rember it must be absolute path like `/home/username/markdown.css`
+or `expand('~/markdown.css')`.
+
+```vim-script
+let g:mkdp_markdown_css = ''
+```
+
+Also you can use a custom highlight style to preview the Markdown, to do
+that, you need to change the value of this variable,
+rember it must be absolute path like `/home/username/highlight.css`
+or `expand('~/highlight.css')`.
+
+```vim-script
+let g:mkdp_highlight_css = ''
+```
+
 ## Extra
 
 ### Sort usings with OmniSharp
