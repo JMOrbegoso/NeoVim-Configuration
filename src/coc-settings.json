@@ -1,35 +1,34 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "json",
-    "cpp",
-    "html",
-    "typescript",
-    "typescriptreact",
-    "markdown"
-  ],
-  "diagnostic.displayByAle": true,
-  "prettier.trailingComma": "all",
-  "prettier.singleQuote": true,
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "args": ["--log-file=/tmp/ccls.log", "-v=1"],
-      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        },
-        "client": {
-          "snippetSupport": true
-        },
-        "index": {
-          "onChange": true
-        },
-        "highlight": {
-          "lsRanges": true
-        }
-      }
-    }
-  }
+	"coc.preferences.formatOnSaveFiletypes": [
+		"json",
+		"cpp",
+		"typescript",
+		"typescriptreact",
+		"markdown"
+	],
+	"diagnostic.displayByAle": true,
+	"prettier.trailingComma": "all",
+	"prettier.singleQuote": true,
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"args": ["--log-file=/tmp/ccls.log", "-v=1"],
+			"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+			"rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"client": {
+					"snippetSupport": true
+				},
+				"index": {
+					"onChange": true
+				},
+				"highlight": {
+					"lsRanges": true
+				}
+			}
+		}
+	}
 }
