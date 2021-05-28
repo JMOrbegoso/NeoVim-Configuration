@@ -39,7 +39,7 @@ you are using, like xfce-terminal, Konsole, etc.
 
 ## Language Servers for code completion
 
-Language servers of Json, HTML, TypeScript and C# are installed
+Language servers of Json, HTML and TypeScript are installed
 on the first **:PlugInstall**, but for C/C++ code completion require **ccls**
 installed on the system first:
 
@@ -98,10 +98,6 @@ from vim-skeletons documentation:
 | -------- | -------------- | ------------- |
 | C++      | cpp            | Cpp file      |
 | C++      | h              | Header file   |
-| C#       | cs             | Interface     |
-| C#       | cs             | Test class    |
-| C#       | cs             | Class         |
-| C#       | cs             | Default       |
 
 ## Debug
 
@@ -203,22 +199,6 @@ or `expand('~/highlight.css')`.
 
 ```vim-script
 let g:mkdp_highlight_css = ''
-```
-
-## Extra
-
-### Sort usings with OmniSharp
-
-OmniSharp by default do not sort the usings in a cs file,
-you can change this by specifying it in the OmniSharp configuration file
-located on `~/.omnisharp/omnisharp.json` adding the next values:
-
-```json
-{
-  "FormattingOptions": {
-    "OrganizeImports": true
-  }
-}
 ```
 
 ## Mapping tables

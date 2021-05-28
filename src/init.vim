@@ -112,10 +112,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'peitalin/vim-jsx-typescript'
 
-"" C#
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'nickspoons/vim-sharpenup'
-
 "" Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
@@ -179,7 +175,6 @@ let g:startify_bookmarks = [
           \ { 'v': '~/.config/nvim/init.vim' },
           \ { 'z': '~/.zshrc' },
           \ { 'c': '~/.config/nvim/coc-settings.json' },
-          \ { 'o': '~/.omnisharp/omnisharp.json' },
           \ ]
 
 let g:startify_lists = [
@@ -414,7 +409,6 @@ let g:coc_global_extensions = [
   \'coc-html',
   \'coc-tsserver',
   \'coc-prettier',
-  \'coc-omnisharp',
   \'coc-sql',
   \'coc-markdownlint',
   \]
@@ -740,16 +734,6 @@ let g:yats_host_keyword = 1
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 hi tsxComponentName guifg=#56B6C2
 hi tsxCloseComponentName guifg=#56B6C2
-
-"" C#
-let g:OmniSharp_selector_ui = 'fzf'
-autocmd FileType cs xmap <silent> <Leader>f :OmniSharpCodeFormat<CR> <bar> :OmniSharpFixUsings<CR>
-autocmd FileType cs nmap <silent> <Leader>f :OmniSharpCodeFormat<CR> <bar> :OmniSharpFixUsings<CR>
-
-autocmd FileType cs nmap <silent> <buffer> <Leader>cd :OmniSharpGotoDefinition<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>ct :OmniSharpFindType<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>ci :OmniSharpFindImplementations<CR>
-autocmd FileType cs nmap <silent> <buffer> <Leader>cr :OmniSharpFindUsages<CR>
 
 "" Markdown
 nmap <silent> <Leader>p :MarkdownPreviewToggle<CR>
