@@ -396,7 +396,6 @@ let g:coc_global_extensions = [
   \'coc-json',
   \'coc-git',
   \'coc-prettier',
-  \'coc-sql',
   \'coc-markdownlint',
   \]
 
