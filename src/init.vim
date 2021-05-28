@@ -101,12 +101,6 @@ Plug 'puremourning/vimspector'
 Plug 'ludwig/split-manpage.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 
-"" HTML
-Plug 'hail2u/vim-css3-syntax'
-Plug 'gko/vim-coloresque'
-Plug 'tpope/vim-haml'
-Plug 'mattn/emmet-vim'
-
 "" TypeScript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -406,7 +400,6 @@ let g:coc_global_extensions = [
   \'coc-vimlsp',
   \'coc-json',
   \'coc-git',
-  \'coc-html',
   \'coc-tsserver',
   \'coc-prettier',
   \'coc-sql',
@@ -723,11 +716,6 @@ autocmd FileType cpp nnoremap <silent> <Leader>bb :call BuildReleaseCppProjectFo
 autocmd FileType cpp nnoremap <silent> <Leader>bw :call BuildReleaseCppProjectForWindows()<CR>
 
 autocmd FileType cpp nnoremap <silent> <Leader>dd :call BuildDebugCppProject()<CR> <bar> :call vimspector#Launch()<CR>
-
-"" HTML
-"" for html files, 2 spaces
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd FileType html,css EmmetInstall
 
 "" TypeScript
 let g:yats_host_keyword = 1
