@@ -39,7 +39,7 @@ you are using, like xfce-terminal, Konsole, etc.
 
 ## Language Servers for code completion
 
-Language servers of Json, HTML and TypeScript are installed
+Language servers of Json, Markdown and Vimlsp are installed
 on the first **:PlugInstall**, but for C/C++ code completion require **ccls**
 installed on the system first:
 
