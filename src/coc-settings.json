@@ -1,14 +1,6 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": [
-		"json",
-		"cpp",
-		"typescript",
-		"typescriptreact",
-		"markdown"
-	],
+	"coc.preferences.formatOnSaveFiletypes": ["json", "cpp", "markdown"],
 	"diagnostic.displayByAle": true,
-	"prettier.trailingComma": "all",
-	"prettier.singleQuote": true,
 	"languageserver": {
 		"ccls": {
 			"command": "ccls",
