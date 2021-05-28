@@ -101,11 +101,6 @@ Plug 'puremourning/vimspector'
 Plug 'ludwig/split-manpage.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 
-"" TypeScript
-Plug 'leafgarland/typescript-vim'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'peitalin/vim-jsx-typescript'
-
 "" Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
@@ -400,7 +395,6 @@ let g:coc_global_extensions = [
   \'coc-vimlsp',
   \'coc-json',
   \'coc-git',
-  \'coc-tsserver',
   \'coc-prettier',
   \'coc-sql',
   \'coc-markdownlint',
@@ -716,12 +710,6 @@ autocmd FileType cpp nnoremap <silent> <Leader>bb :call BuildReleaseCppProjectFo
 autocmd FileType cpp nnoremap <silent> <Leader>bw :call BuildReleaseCppProjectForWindows()<CR>
 
 autocmd FileType cpp nnoremap <silent> <Leader>dd :call BuildDebugCppProject()<CR> <bar> :call vimspector#Launch()<CR>
-
-"" TypeScript
-let g:yats_host_keyword = 1
-autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
-hi tsxComponentName guifg=#56B6C2
-hi tsxCloseComponentName guifg=#56B6C2
 
 "" Markdown
 nmap <silent> <Leader>p :MarkdownPreviewToggle<CR>
