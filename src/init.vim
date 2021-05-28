@@ -402,8 +402,6 @@ let g:coc_global_extensions = [
 "" Vimspector
 let g:vimspector_install_gadgets = [
   \'vscode-cpptools',
-  \'vscode-node-debug2',
-  \'netcoredbg',
   \]
 
 "" Ale
